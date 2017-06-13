@@ -1,0 +1,5 @@
+Qu'est-ce qu'un long métrage ?
+C'est un film dont le métrage excède 1600 mètres. Sachant qu'une image fait
+19 millimètres, et qu'il y a 24 images par secondes, cela donne un peu plus
+de 58 minutes. C'est pourquoi on considère en général qu'un court métrage
+dure moins de 30 minutes et un moyen métrage moins de 1 heure.
