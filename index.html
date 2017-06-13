@@ -2,12 +2,67 @@
   <head>
     <meta charset="UTF-8" />
     <title>Un peu d'archéologie…</title>
+    <style>
+      body {
+        font-family: Georgia, "DejaVu Serif", serif;
+        font-size: calc(.9em + .5vw);
+        line-height: 1.5;
+        font-weight: 400;
+      }
+
+      .wrapper {
+        margin: 0 auto;
+        max-width: 50em;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      thead {
+        background-color: #eee;
+      }
+
+      th, td {
+        padding: .3em .5em;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      td {
+        vertical-align: top;
+      }
+    </style>
   </head>
   <body>
-    <h1>Un peu d'archéologie…</h1>
-    <p>Ces sites datent un peu, mais ont participé à mes nombreuses expérimentations Web au fil des années, ils ont chacun une valeur à leur façon… ;-)</p>
-    <ul>
-      <li><a href="./1998-cine-files/">Ciné Files</a> (1998)</li>
-    </ul>
+    <div class="wrapper">
+      <h1>Un peu d'archéologie…</h1>
+      <p>Ces sites datent plus ou moins, mais ont participé à mes nombreuses expérimentations Web au fil des années. Ils ont chacun une valeur à leur façon. Ce sont des copies statiques qui sont conservées.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Site</th>
+            <th>Période d'existence</th>
+            <th>Technologie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="./1998-cine-files/">Ciné Files</a></td>
+            <td>1998</td>
+            <td>Développement spécifique en PHP 3</td>
+          </tr>
+          <tr>
+            <td><a href="./2001-gasteroprod/">Gastero Prod.</a></td>
+            <td>de 2001 à 2015</td>
+            <td><a href="https://www.spip.net/fr_rubrique91.html">SPIP</a> versions 0.99c à 3.0.21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
