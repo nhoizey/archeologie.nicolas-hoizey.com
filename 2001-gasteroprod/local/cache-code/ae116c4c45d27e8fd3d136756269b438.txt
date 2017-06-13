@@ -1,0 +1,4 @@
+function push($array, $val) {
+	if($array == '' OR !array_push($array, $val)) return '';
+	return $array;
+}

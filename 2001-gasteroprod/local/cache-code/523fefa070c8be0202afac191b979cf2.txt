@@ -1,0 +1,9 @@
+<B_boucle>
+	Contenu conditionnel avant
+<BOUCLE_boucle(STRUCTURE){paramètre}>
+	Contenu bouclé
+</BOUCLE_boucle>
+	Contenu conditionnel après
+</B_boucle>
+	Contenu si pas d'éléments
+<//B_boucle>

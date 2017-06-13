@@ -1,0 +1,8 @@
+function gravatar_url($email = '')
+{
+    if ($email != '') {
+        return 'http://www.gravatar.com/avatar.php?gravatar_id='.md5($email).'&size=42&rating=PG';
+    } else {
+        return '';
+    }
+}

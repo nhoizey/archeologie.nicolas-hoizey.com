@@ -1,0 +1,15 @@
+.bookmark-item > .toolbarbutton-icon {
+  margin: 0px !important;
+  padding : 0px 2px 0px 0px !important;
+  width: 18px !important;
+  height: 16px !important;
+  display: inline !important;
+}
+
+.bookmark-item:hover > .toolbarbutton-icon {
+  background: url("chrome://browser/skin/bookmark-hover-mid.png") repeat-x !important;
+}
+
+.bookmark-item:hover:active > .toolbarbutton-icon {
+  background: url("chrome://browser/skin/bookmark-open-mid.png") repeat-x !important;
+} 

@@ -1,0 +1,3 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "AvenirNextCondensed-Medium", "Avenir Next Condensed Medium", "Gill Sans MT Condensed", "Arial Narrow", "DejaVu Sans Condensed", Calibri, sans-serif;
+}

@@ -1,0 +1,5 @@
+  // Galerie
+  if (!$forum) {
+    $ret .= bouton_barre_racc ("javascript:barre_galerie('$champ')",
+'galerie.png', 'Ouvrir la galerie', $formulaire, $texte);
+  }

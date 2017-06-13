@@ -1,0 +1,7 @@
+#!/bin/sh
+url="https://wifi.free.fr/Auth"
+login="votre identifiant numérique"
+password="votre mot de passe"
+okmatch="CONNEXION AU SERVICE REUSSIE"
+
+curl -s -F "login=${login}" -F "password=${password}" "${url}" | grep -q "${okmatch}" && growlnotify -m "Connecté à FreeWifi" "FreeWifi"

@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^www\.gasteroprod\.com [NC]
+RewriteRule ^(.*) http://gasteroprod.com/$1 [QSA,R=301,L]

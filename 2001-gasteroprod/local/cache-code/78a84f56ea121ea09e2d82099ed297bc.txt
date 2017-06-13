@@ -1,0 +1,3 @@
+jQuery.extend(jQuery.expr[':'], {
+     containsExactly: "$(a).text() == m[3]"
+});

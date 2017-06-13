@@ -1,0 +1,10 @@
+$months = array('', 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+$days = array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+
+if (!isset($date) || $date == '') $date = date('Y-m-d');
+ereg("^([0-9]{4})-([0-9]{2})-([0-9]{2}).*$", $date, $regs);
+$cal_day = mktime(0, 0, 0, $regs[2], $regs[3], $regs[1]);
+
+$D = date('d', $cal_day);
+$M = date('m', $cal_day);
+$Y = date('Y', $cal_day);

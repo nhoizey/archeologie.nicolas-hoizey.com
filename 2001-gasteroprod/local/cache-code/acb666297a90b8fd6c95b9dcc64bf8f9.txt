@@ -1,0 +1,15 @@
+// Directory where the files will be created
+define('DIRECTORY', 'backup');
+define('ARCHIVE_PREFIX', 'mon_site_spip');
+
+// Database connection parameters
+define('BASE_HOST', 'localhost');
+define('BASE_NAME', 'spip');
+define('BASE_USERNAME', 'root');
+define('BASE_USERPASS', '');
+
+// Number of archives to keep (0 for all)
+define('ARCHIVES_NUMBER', 2);
+
+// Use visualy improved version
+define('VISUAL_FRIENDLY', false);

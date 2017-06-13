@@ -1,0 +1,6 @@
+$branche = array();
+<BOUCLE_courante(RUBRIQUES){id_rubrique}>
+    <BOUCLE_branche(RUBRIQUES){branche}>
+        $branche[] = #ID_RUBRIQUE;
+    </BOUCLE_branche>
+</BOUCLE_courante>

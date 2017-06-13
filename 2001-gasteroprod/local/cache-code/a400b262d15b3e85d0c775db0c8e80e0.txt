@@ -1,0 +1,71 @@
+<table cellpadding="5" cellspacing="0" align="center" border="1" class="agenda">
+<form name="navigation" method="get">
+<tr>
+	<th colspan="7" class="agendaNav">
+		<a href="#URL_SITE_SPIP/agenda.php3?id_rubrique=#ID_RUBRIQUE&date=<?php echo (($M - 1 > 0) ? $Y : ($Y - 1)); ?>-<?php printf('%02d', ($M - 1) > 0 ? ($M - 1) : 12); ?>-01"><b>&lt;&lt;</b></a>
+		&nbsp;&nbsp;&nbsp;
+		<select name="var_nav_month">
+		<?php
+		for($i = 1; $i < 13; $i++) {
+			echo '<option value="'.sprintf('%02d', $i).'"'.($i == $M ? ' selected="selected" style="font-weight: bolder;"' : '').'>'.$months[$i].'</option>';
+		}
+		?>
+		</select>
+		<select name="var_nav_year">
+		<?php
+		for($i = 2000; $i < 2011; $i++) {
+			echo '<option value="'.$i.'"'.($i == $Y ? ' selected="selected" style="font-weight: bolder;"' : '').'>'.$i.'</option>';
+		}
+		?>
+		</select>
+		<input type="button" value="go" onClick="document.location.href='#URL_SITE_SPIP/agenda.php3?id_rubrique=#ID_RUBRIQUE&date=' + window.document.navigation.var_nav_year.value + '-' + window.document.navigation.var_nav_month.value + '-01'; return false;" />
+		&nbsp;&nbsp;&nbsp;
+		<a href="#URL_SITE_SPIP/agenda.php3?id_rubrique=#ID_RUBRIQUE&date=<?php echo (($M + 1 < 13) ? $Y : ($Y + 1)); ?>-<?php echo printf('%02d', ($M + 1) < 13 ? ($M + 1) : 1); ?>-01"><b>&gt;&gt;</b></a>
+		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+		<a href="#URL_SITE_SPIP/agenda.php3?id_rubrique=#ID_RUBRIQUE&date=<?php echo (date('Y-m-d')); ?>"><b>Aujourd'hui</b></a>
+	</th>
+</tr>
+</form>
+<tr> 
+	<?php
+	for($i = 1; $i < 8; $i++) {
+		echo '<th width="14%" class="agendaHead">'.$days[$i%7].'</th>';
+	}
+	$TempD = 1;
+	if(date('w', mktime(0, 0, 0, $M, 1, $Y)) != 1) {
+		echo '</tr><tr>';
+		$tmp = '';
+		while(date('w', mktime(0, 0, 0, $M, $TempD, $Y)) != 1) {
+			$TempD--;
+			$case = '<td width="14%" height="50" valign="top" class="agendaNotThisMonth">';
+			$case .= date('j', mktime(0, 0, 0, $M, $TempD, $Y));
+			$date = date('Ymd', mktime(0, 0, 0, $M, $TempD, $Y));
+			if (isset($events[$date])) {
+				while (list(, $event) = each($events[$date])) {
+					$case .= '<br />'.$event['logo'].'<a href="'.$event['link'].'">'.$event['title'].'</a>';
+				}
+			}
+			$case .= '</td>';
+			$tmp = $case.$tmp;
+		}
+		echo $tmp;
+	}
+	$TempD = 1;
+	while((date('m', mktime(0, 0, 0, $M, $TempD, $Y)) == $M) || (date('w', mktime(0, 0, 0, $M, $TempD, $Y)) != 1)) {
+		if(date('w', mktime(0, 0, 0, $M, $TempD, $Y)) == 1) {
+			echo '</tr><tr>';
+		}
+		echo '<td width="14%" height="50" valign="top" class="agenda'.(date('m', mktime(0, 0, 0, $M, $TempD, $Y)) != $M ? 'Not' : '').'This'.(date('Ymd', mktime(0, 0, 0, $M, $TempD, $Y)) == date('Ymd') ? 'Day' : 'Month').'">';
+		echo date('j', mktime(0, 0, 0, $M, $TempD, $Y));
+		$date = date('Ymd', mktime(0, 0, 0, $M, $TempD, $Y));
+		if (isset($events[$date])) {
+			while (list(, $event) = each($events[$date])) {
+				echo '<br />'.$event['logo'].'<a href="'.$event['link'].'">'.$event['title'].'</a>';
+			}
+		}
+		echo '</td>';
+		$TempD++;
+	}
+	?>
+</tr>
+</table>

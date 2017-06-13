@@ -1,0 +1,4 @@
+  function barre_galerie(champ) {
+    window.open('galerie.php3?field=' + champ, 'galerie',
+'width=550,height=400,menubar=no,scrollbars=yes')
+  }

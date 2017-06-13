@@ -1,0 +1,26 @@
+<BOUCLE_mot_courant(MOTS){titre=mot_clef}>
+  #SET{sites,#ARRAY}
+  <B_sites>
+  <BOUCLE_sites(SITES){id_mot}>
+    [(#SET{sites,[(#GET{sites}|push{#ID_SYNDIC})]})]
+  </BOUCLE_sites>
+    <B_derniers_liens>
+      #ANCRE_PAGINATION
+      <dt><span>Actualité du Web</span></dt>
+      <dd id="actu-web">
+        [(#PAGINATION{accessible})]
+        <dl>
+          <BOUCLE_derniers_liens(SYNDIC_ARTICLES){id_syndic IN #GET**{sites}}{pagination 5}{par date}{inverse}>
+            <dt>#TITRE</dt>
+            <dd class="origine">Sur <a href="#URL_ARTICLE">#NOM_SITE</a></dd>
+            <dd class="date">[(#DATE|affdate)]</dd>
+            [<dd class="auteur"><cite>(#LESAUTEURS)</cite></dd>]
+            [<dd><blockquote><p>(#DESCRIPTIF)</p></blockquote></dd>]
+          </BOUCLE_derniers_liens>
+        </dl>
+        [(#PAGINATION{accessible})]
+      </dd>
+    </B_derniers_liens>
+  </B_sites>
+  <//B_sites>
+</BOUCLE_mot_courant>
