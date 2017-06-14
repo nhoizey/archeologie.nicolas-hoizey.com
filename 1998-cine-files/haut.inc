@@ -133,6 +133,9 @@
 </HEAD>
 
 <BODY BGCOLOR="#FFFFFF" TEXT="#FFFFFF" LINK="#66FFFF" ALINK="#FF6666" VLINK="#66FFFF" MARGINWIDTH=0 MARGINHEIGHT=0 LEFTMARGIN=0 RIGHTMARGIN=0 TOPMARGIN=0 BOTTOMMARGIN=0 <?php if($JavaScript == 1): ?>onLoad="preload()"<?php endif; ?>>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; font-family: Georgia, serif; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
 <CENTER>
 <TABLE WIDTH=100% HEIGHT=100% BORDER=0 CELLPADDING=0 CELLSPACING=0>
 <TR>
