@@ -9,7 +9,7 @@
 <title>Mes conventions de codage - Gastero Prod.</title>
   <meta name="description" content=" Oncle Tom m&#039;a envoy&#233; en douce il y a quelques jours une patate chaude en m&#039;invitant &#224; vous parler de mes conventions de codage. Vaste sujet, et (...) " />
   <link rel="canonical" href="mes-conventions-de-codage.html" />
-  
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@nhoizey" />
   <meta property="og:type" content="article" />
@@ -17,16 +17,16 @@
   <meta property="og:url" content="http://gasteroprod.dev/web/mes-conventions-de-codage" />
   <meta property="og:title" content="Mes conventions de codage" />
   <meta property="og:description" content=" Oncle Tom m&#039;a envoy&#233; en douce il y a quelques jours une patate chaude en m&#039;invitant &#224; vous parler de mes conventions de codage. Vaste sujet, et surtout tr&#232;s vite trollesque, de quoi se r&#233;galer. (...) " />
-  
+
   <meta property="og:image" content="http://gasteroprod.dev/IMG/siteon0.png?1497358745" />
   <meta property="og:locale" content="fr_FR" /><link rel="dns-prefetch" href="http://static.gasteroprod.com/" />
 
 <script type='text/javascript'>/*<![CDATA[*/
 	(function(R, H) {
-		
+
 		H.className = H.className.replace(/\bno-js\b/, 'js');
 
-		
+
 		R = R || 'landing';
 		if (!R.match(/^https?:\/\/(www\.)?gasteroprod\.(com|dev)\//)) {
 			H.className+=' landing';
@@ -39,6 +39,9 @@
 <link rel="icon" type="image/png" href="../plugins/perso/gasteroprod.com/img/gastero-prod-favicon.png" />
 <link rel="apple-touch-icon" href="../plugins/perso/gasteroprod.com/img/apple-touch-icon-144.png" /></head>
 <body>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
   <div id="page">
     <header id="header">
       <p id="logo" itemscope itemtype="http://schema.org/Organization">
@@ -117,7 +120,7 @@
       <article class="h-entry surlignable">
     <header>
       <h1 class="p-name">Mes conventions de codage</h1>
-      
+
     </header>
     <div class="content e-content">
       <div class="infos">
@@ -126,7 +129,7 @@
     <p><span class="label">tagué </span><span class="tags p-category"><a href="../tags/css.html" rel="tag p-category">CSS</a>, <a href="../tags/developpement.html" rel="tag p-category">développement</a>, <a href="../tags/informatique.html" rel="tag p-category">informatique</a> et <a href="../tags/javascript.html" rel="tag p-category">JavaScript</a></span></p>
     <p><span class="label"> et </span><span class="commentaires">    <a href="mes-conventions-de-codage.html#comments">commenté 3 fois</a></span></p></span>
   </div><div class="p-summary chapo"><p><a href="http://case.oncle-tom.net/" class='spip_out' rel='external'>Oncle Tom</a> m&#8217;a envoyé en douce il y a quelques jours une <a href="http://case.oncle-tom.net/2008/07/23/conventions-de-programmation-necessaire-maturite/" class='spip_out' rel='external'>patate chaude</a> en m&#8217;invitant à vous parler de mes conventions de codage. Vaste sujet, et surtout très vite trollesque, de quoi se régaler.</p></div>
-      
+
       <div class="texte"><p>J&#8217;avais commencé à mettre le sujet en perspective avec un bref historique de mon expérience du développement informatique, mais ce qui devait être bref s&#8217;est révélé plutôt étoffé, donc c&#8217;est devenu un article à part entière sur mes aventures informatiques, et il y a tellement à dire que je ne l&#8217;ai pas fini... bref, passons tout de suite au cœur du sujet&nbsp;!</p>
 <p>En fait, au risque de décevoir, j&#8217;ai plus des habitudes que des conventions strictes de codage, et même si j&#8217;ai des préférences personnelles, j&#8217;essaie en général de m&#8217;en tenir aux conventions qui me sont dictées par les projets auxquels je participe.</p>
 <p>Après quelques projets sur lesquels j&#8217;étais plutôt isolé, comme <a href="http://sourceforge.net/projects/phpmychat/" class='spip_out' rel='external'>phpMyChat</a>, et des discussions sur les newsgroups <a href="news://fr.comp.internet.www.auteurs.php" class='spip_out'>fciwap</a> puis <a href="news://fr.comp.lang.php" class='spip_out'>fclp</a>, ma première grosse expérience en matière de conventions de codage est venue avec <a href="../divers/une-introduction-a-pear.html" class='spip_in'>PEAR</a><sup class="spip_note"><a href='mes-conventions-de-codage.html#nb1' class='spip_note' rel='footnote' title='Pour ceux qui ne connaissent pas, PEAR est un entrepôt de classes — et non&nbsp;(...)' id='nh1'>1</a></sup>. Des discussions interminables et passionnées<sup class="spip_note"><a href='mes-conventions-de-codage.html#nb2' class='spip_note' rel='footnote' title='Oui, OK, trollesques, on peut le dire...' id='nh2'>2</a></sup> ont eu lieu sur les mailing-lists du projet lors de l&#8217;élaboration des <a href="http://pear.php.net/manual/fr/standards.php" class='spip_out' rel='external'>conventions de codage</a>, à laquelle j&#8217;ai participé fin 2001. Il était notamment question du choix d&#8217;<a href="http://article.gmane.org/gmane.comp.php.pear.devel/359" class='spip_out' rel='external'>espaces ou tabulations pour l&#8217;indentation du code</a><sup class="spip_note"><a href='mes-conventions-de-codage.html#nb3' class='spip_note' rel='footnote' title='Certains ont même proposer de mélanger tabulations et espaces&nbsp;(...)' id='nh3'>3</a></sup> ou du positionnement des accolades...</p>
@@ -136,10 +139,10 @@
 <p>Côté PHP, donc, j&#8217;étais plutôt utilisateur des conventions de PEAR, mais comme je l&#8217;ai indiqué plus tôt, j&#8217;adopte systématiquement les conventions déjà en place sur les projets auxquels je participe, donc je m&#8217;intéresse maintenant à celles de <a href="http://www.clever-age.com/veille/blog/tags/symfony/" class='spip_out' rel='external'>symfony</a>.</p>
 <p>Pour le Javascript, rien de bien original, j&#8217;utilise <i>grosso modo</i> les mêmes qu&#8217;Oncle Tom, mais pour les CSS, je reste basique, pas d&#8217;indentation selon la cascade, et un ordre logique plutôt qu&#8217;alphabétique.</p>
 <p>Bon, la patate est encore chaude bien que passée entre de nombreuses mains, je la refile vite fait à <a href="http://www.glagla.org/weblog/" class='spip_out' rel='external'>Oliv</a> même s&#8217;il a fait un rapide commentaire chez Oncle Tom, <a href="http://www.unelectronlibre.info/" class='spip_out' rel='external'>NiCoS</a> histoire d&#8217;avoir l&#8217;avis d&#8217;un fan de Django et <a href="http://www.clochix.net/" class='spip_out' rel='external'>Clochix</a>&nbsp;!</p></div>
-      
 
-      
-      
+
+
+
       <div class="notes"><h2>Notes</h2><div id='nb1'>
 <p><span class="spip_note_ref"><a href='mes-conventions-de-codage.html#nh1' class='spip_note' title='Notes 1' rev='footnote'>1</a></span>Pour ceux qui ne connaissent pas, PEAR est un entrepôt de classes &mdash; et non réellement un <a href="http://www.clever-age.com/veille/blog/tags/framework/" class='spip_out' rel='external'><i>framework</i></a>, même si ce terme est plus attractif &mdash; PHP répondant aux problématiques les plus courantes des développements Web.</p>
 </div><div id='nb2'>
@@ -150,74 +153,74 @@
     </div>
   </article>
 
-  
+
   <div class="comments">
-	<a href="mes-conventions-de-codage.html#comments" name="comments" id="comments"></a> 
-	<a href="mes-conventions-de-codage.html#forum" name="forum" id="forum"></a> 
+	<a href="mes-conventions-de-codage.html#comments" name="comments" id="comments"></a>
+	<a href="mes-conventions-de-codage.html#forum" name="forum" id="forum"></a>
 	<div class='ajaxbloc' data-ajax-env='wdshTklGLXBLk8ECajzNU3Rxozt21cFi+NIP+077IPdV3Zl6jbRQk9+lzNdVyYNT0B+9Cz5Vub229xkW8Z2qllQOUS8LkPEk2mP2tfhvCP4IyOtJPPd4ikVXrC8rW6tqHZtjYG25EK+rEWQadSg4LNZVl54MOUX0RxzPZy9PaJIODXry5vD+DoEYAoIQKYhw4n9QGMsklU+0Tv3GaSnDjsUzEtdaMgIXENaBh7t3GDQAv6nH82FvuTiGH9P/6ab3aH5d8Vk8bIWb' data-origin="/web/mes-conventions-de-codage">
 
 
 <div class="comments-list comments-posts">
 	<h2 class="h2">Vos commentaires</h2>
 	<ul class="comments-ul comments-items">
-		
+
 		<li class="comment-li comment-item odd  first">
 			<div class="comment hreview">
 	<a href="mes-conventions-de-codage.html#comment1537" name="comment1537" id="comment1537"></a>
 	<a href="mes-conventions-de-codage.html#forum1537" name="forum1537" id="forum1537"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="mes-conventions-de-codage.html#forum1537" title="Lien permanent vers le commentaire 1537" class="permalink compteur">1<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-08-01T09:49:05Z">Le 1er août 2008 à&nbsp;09:49</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">NiCoS</strong>  <img src='../local/cache-gd2/95/f42547fe46de60ce81902c833dd602.jpg%3F1497364400' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="mes-conventions-de-codage.html">Mes conventions de codage</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Je te déteste, me faire ça le jour de mes vacances... pfff ça attendra mon retour na&nbsp;!</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview reply">
 	<a href="mes-conventions-de-codage.html#comment1538" name="comment1538" id="comment1538"></a>
 	<a href="mes-conventions-de-codage.html#forum1538" name="forum1538" id="forum1538"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="mes-conventions-de-codage.html#forum1538" title="Lien permanent vers le commentaire 1538" class="permalink compteur">2<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-08-01T10:23:05Z">Le 1er août 2008 à&nbsp;10:23</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="mes-conventions-de-codage.html">Mes conventions de codage</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Quelle idée de partir en vacances, aussi&nbsp;!!!&nbsp;:-p</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="mes-conventions-de-codage.html#comment1554" name="comment1554" id="comment1554"></a>
 	<a href="mes-conventions-de-codage.html#forum1554" name="forum1554" id="forum1554"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="mes-conventions-de-codage.html#forum1554" title="Lien permanent vers le commentaire 1554" class="permalink compteur">3<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-08-16T22:17:16Z">Le 16 août 2008 à&nbsp;22:17</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">NiCoS</strong>  <img src='../local/cache-gd2/95/f42547fe46de60ce81902c833dd602.jpg%3F1497364400' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="mes-conventions-de-codage.html">Mes conventions de codage</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Voilà, c&#8217;est <a href="http://www.unelectronlibre.info/journal/post/2008/08/16/Conventions-de-codage-si-tant-est-que-j-en-ai" class="spip_out" rel='nofollow external'>fait</a>&nbsp;:-)</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 	</ul>
 </div>
 
@@ -302,7 +305,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 	Sauf mention contraire explicite, tous les contenus de ce site sont la propriété de Nicolas Hoizey et sont sous licence <a href="http://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0</a>.
 </p>    </footer>
   </div>
-  
+
 <!-- insert_head_css --><link rel='stylesheet' href='../local/cache-css/44d99dd2b32a5e4a12f57c13a85c5e5f.css%3F1497376017.css' type='text/css' /><script type='text/javascript' src='../local/cache-js/c2522b29caab081adb1f697205c9eb52.js%3F1497376017'></script>
 
 
@@ -317,7 +320,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 <!-- insert_head -->
 
 
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://gasteroprod.dev/plugins/perso/gasteroprod.com/js/vendors/analytics.js','ga'); ga('create', 'UA-1655999-1');
   ga('send', 'pageview');

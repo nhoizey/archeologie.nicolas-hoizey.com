@@ -9,7 +9,7 @@
 <title>Des Services Web REST encore plus simples qu'avec XML ? - Gastero Prod.</title>
   <meta name="description" content="Article initialement publi&#233; dans le weblog de Clever Age. Si vous avez d&#233;j&#224; manipul&#233; les flux de syndication de Flickr, vous avez appel&#233; des URL de la forme suivante : Flux RSS 2.0 : flickr.com/.../photos_public.gne ?id=...&#38;format=rss_200 Flux Atom 0.3 : flickr.com/.../photos_public.gne ?id=...&#38;format=atom_03 Eh bien il est possible d&#039;utiliser d&#039;autres valeurs du param&#232;tre &#171; format &#187; de l&#039;URL pour obtenir les donn&#233;es non pas en RSS ou Atom, mais dans un format plus simple &#224; manipuler sur votre plateforme." />
   <link rel="canonical" href="des-services-web-rest-encore-plus-simples-qu-avec-xml.html" />
-  
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@nhoizey" />
   <meta property="og:type" content="article" />
@@ -17,16 +17,16 @@
   <meta property="og:url" content="http://gasteroprod.dev/divers/des-services-web-rest-encore-plus-simples-qu-avec-xml" />
   <meta property="og:title" content="Des Services Web REST encore plus simples qu'avec XML ?" />
   <meta property="og:description" content="Article initialement publi&#233; dans le weblog de Clever Age. Si vous avez d&#233;j&#224; manipul&#233; les flux de syndication de Flickr, vous avez appel&#233; des URL de la forme suivante : Flux RSS 2.0 : flickr.com/.../photos_public.gne ?id=...&#38;format=rss_200 Flux Atom 0.3 : flickr.com/.../photos_public.gne ?id=...&#38;format=atom_03 Eh bien il est possible d&#039;utiliser d&#039;autres valeurs du param&#232;tre &#171; format &#187; de l&#039;URL pour obtenir les donn&#233;es non pas en RSS ou Atom, mais dans un format plus simple &#224; manipuler sur votre plateforme." />
-  
+
   <meta property="og:image" content="http://gasteroprod.dev/IMG/siteon0.png?1497358745" />
   <meta property="og:locale" content="fr_FR" /><link rel="dns-prefetch" href="http://static.gasteroprod.com/" />
 
 <script type='text/javascript'>/*<![CDATA[*/
 	(function(R, H) {
-		
+
 		H.className = H.className.replace(/\bno-js\b/, 'js');
 
-		
+
 		R = R || 'landing';
 		if (!R.match(/^https?:\/\/(www\.)?gasteroprod\.(com|dev)\//)) {
 			H.className+=' landing';
@@ -39,6 +39,9 @@
 <link rel="icon" type="image/png" href="../plugins/perso/gasteroprod.com/img/gastero-prod-favicon.png" />
 <link rel="apple-touch-icon" href="../plugins/perso/gasteroprod.com/img/apple-touch-icon-144.png" /></head>
 <body>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
   <div id="page">
     <header id="header">
       <p id="logo" itemscope itemtype="http://schema.org/Organization">
@@ -117,7 +120,7 @@
       <article class="h-entry surlignable">
     <header>
       <h1 class="p-name">Des Services Web REST encore plus simples qu&#8217;avec XML&nbsp;?</h1>
-      
+
     </header>
     <div class="content e-content">
       <div class="infos">
@@ -129,7 +132,7 @@
 <p>Si vous avez déjà manipulé les flux de syndication de Flickr, vous avez appelé des URL de la forme suivante&nbsp;:</p>
 <ul class="spip"><li> Flux RSS 2.0&nbsp;: <code class='spip_code' dir='ltr'>flickr.com/.../photos_public.gne?id=...&amp;format=rss_200</code></li><li> Flux Atom 0.3&nbsp;: <code class='spip_code' dir='ltr'>flickr.com/.../photos_public.gne?id=...&amp;format=atom_03</code></li></ul>
 <p>Eh bien il est possible d&#8217;utiliser d&#8217;autres valeurs du paramètre &#171;&nbsp;format&nbsp;&#187; de l&#8217;URL pour obtenir les données non pas en RSS ou Atom, mais dans un format plus simple à manipuler sur votre plateforme.</p></div>
-      
+
       <div class="texte"><p>Le premier exemple intéressant va dans le sens de la nouvelle <a href="http://developer.yahoo.com/common/phpserial.html" class='spip_out' rel='external'>version &#171;&nbsp;serialized php&nbsp;&#187;</a> de l&#8217;<a href="http://www.clever-age.com/veille/weblog/yahoo-ouvre-via-une-api-web-services-350.html" class='spip_out' rel='external'>API de Yahoo</a>&nbsp;:<br class='autobr' />
 <a href="http://flickr.com/services/feeds/photos_public.gne?id=38608514@N00&amp;format=php_serial" class='spip_out' rel='external'>php_serial</a></p>
 <p>Mais vous pouvez tenter toute sorte de formats&nbsp;:</p>
@@ -141,10 +144,10 @@
 <p>Par contre, il manque deux choses pour que le modèle d&#8217;architecture REST soit respecté&nbsp;:</p>
 <ol class="spip"><li> le type de contenu devrait être correctement indiqué dans l&#8217;en-tête HTTP de la réponse du service web (Content-Type&nbsp;: xxx)</li><li> et de même, le client devrait indiquer le format qu&#8217;il désire dans l&#8217;en-tête HTTP de sa requête et non dans une variable GET.</li></ol>
 <p>L&#8217;identificateur du format désiré (json, xml, rdf, ...) est une méta-donnée de représentation et non pas une identification de la ressource (dans l&#8217;URL). Pour faire une analogie, on retrouve un peu ici le problème de séparation entre contenu et présentation des <a href="http://www.clever-age.com/veille/etudes-payantes/portails-gestion-contenu-etat-art-solutions-7.html" class='spip_out' rel='external'>outils de gestion de contenu Web</a>, la spécification HTTP prévoit une en-tête pour ça (Accept)<sup class="spip_note"><a href='des-services-web-rest-encore-plus-simples-qu-avec-xml.html#nb2' class='spip_note' rel='footnote' title='Enfin, mais c’est assez subjectif, cela fait des URLs plutôt moches...' id='nh2'>2</a></sup>.</p></div>
-      
 
-      
-      
+
+
+
       <div class="notes"><h2>Notes</h2><div id='nb1'>
 <p><span class="spip_note_ref"><a href='des-services-web-rest-encore-plus-simples-qu-avec-xml.html#nh1' class='spip_note' title='Notes 1' rev='footnote'>1</a></span>Voir <a href="http://www.clever-age.com/veille/etudes-payantes/les-web-services-avenir-architectures-web-8.html" class='spip_out' rel='external'>notre étude sur les Web Services</a>, dont nous allons prochainement publier une mise à jour</p>
 </div><div id='nb2'>
@@ -153,10 +156,10 @@
     </div>
   </article>
 
-  
+
   <div class="comments">
-	<a href="des-services-web-rest-encore-plus-simples-qu-avec-xml.html#comments" name="comments" id="comments"></a> 
-	<a href="des-services-web-rest-encore-plus-simples-qu-avec-xml.html#forum" name="forum" id="forum"></a> 
+	<a href="des-services-web-rest-encore-plus-simples-qu-avec-xml.html#comments" name="comments" id="comments"></a>
+	<a href="des-services-web-rest-encore-plus-simples-qu-avec-xml.html#forum" name="forum" id="forum"></a>
 	</div>    </div>
     <footer id="footer">
       <p id="social">
@@ -238,7 +241,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 	Sauf mention contraire explicite, tous les contenus de ce site sont la propriété de Nicolas Hoizey et sont sous licence <a href="http://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0</a>.
 </p>    </footer>
   </div>
-  
+
 <!-- insert_head_css --><link rel='stylesheet' href='../local/cache-css/44d99dd2b32a5e4a12f57c13a85c5e5f.css%3F1497376017.css' type='text/css' /><script type='text/javascript' src='../local/cache-js/c2522b29caab081adb1f697205c9eb52.js%3F1497376017'></script>
 
 
@@ -253,7 +256,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 <!-- insert_head -->
 
 
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://gasteroprod.dev/plugins/perso/gasteroprod.com/js/vendors/analytics.js','ga'); ga('create', 'UA-1655999-1');
   ga('send', 'pageview');

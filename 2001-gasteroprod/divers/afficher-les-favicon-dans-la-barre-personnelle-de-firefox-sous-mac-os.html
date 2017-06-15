@@ -9,7 +9,7 @@
 <title>Afficher les favicon dans la barre personnelle de Firefox sous Mac OS - Gastero Prod.</title>
   <meta name="description" content=" Dans sa version Mac OS, Mozilla Firefox est configur&#233; pour ne pas afficher l&#039;ic&#244;ne personnalis&#233;e d&#039;un site &#224; c&#244;t&#233; d&#039;un favori plac&#233; dans la barre (...) " />
   <link rel="canonical" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html" />
-  
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@nhoizey" />
   <meta property="og:type" content="article" />
@@ -17,17 +17,17 @@
   <meta property="og:url" content="http://gasteroprod.dev/divers/afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os" />
   <meta property="og:title" content="Afficher les favicon dans la barre personnelle de Firefox sous Mac OS" />
   <meta property="og:description" content=" Dans sa version Mac OS, Mozilla Firefox est configur&#233; pour ne pas afficher l&#039;ic&#244;ne personnalis&#233;e d&#039;un site &#224; c&#244;t&#233; d&#039;un favori plac&#233; dans la barre personnelle. Ce choix est incompr&#233;hensible, l&#039;apport (...) " />
-  
-    
+
+
   <meta property="og:image" content="http://gasteroprod.dev/IMG/png/7/0/3/firefox-favicon-barre-personnelle.png" />
   <meta property="og:locale" content="fr_FR" /><link rel="dns-prefetch" href="http://static.gasteroprod.com/" />
 
 <script type='text/javascript'>/*<![CDATA[*/
 	(function(R, H) {
-		
+
 		H.className = H.className.replace(/\bno-js\b/, 'js');
 
-		
+
 		R = R || 'landing';
 		if (!R.match(/^https?:\/\/(www\.)?gasteroprod\.(com|dev)\//)) {
 			H.className+=' landing';
@@ -40,6 +40,9 @@
 <link rel="icon" type="image/png" href="../plugins/perso/gasteroprod.com/img/gastero-prod-favicon.png" />
 <link rel="apple-touch-icon" href="../plugins/perso/gasteroprod.com/img/apple-touch-icon-144.png" /></head>
 <body>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
   <div id="page">
     <header id="header">
       <p id="logo" itemscope itemtype="http://schema.org/Organization">
@@ -118,7 +121,7 @@
       <article class="h-entry surlignable">
     <header>
       <h1 class="p-name">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</h1>
-      
+
     </header>
     <div class="content e-content">
       <div class="infos">
@@ -127,7 +130,7 @@
     <p><span class="label">tagué </span><span class="tags p-category"><a href="../tags/astuce.html" rel="tag p-category">astuce</a>, <a href="../tags/css.html" rel="tag p-category">CSS</a>, <a href="../tags/firefox.html" rel="tag p-category">Firefox</a> et <a href="../tags/mac.html" rel="tag p-category">Mac</a></span></p>
     <p><span class="label"> et </span><span class="commentaires">                 <a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comments">commenté 16 fois</a></span></p></span>
   </div><div class="p-summary chapo"><p>Dans sa version Mac OS, <a href="http://www.mozilla-europe.org/fr/products/firefox/" class='spip_out' rel='external'>Mozilla Firefox</a> est configuré pour ne pas afficher l&#8217;icône personnalisée d&#8217;un site à côté d&#8217;un favori placé dans la barre personnelle.</p></div>
-      
+
       <div class="texte"><p>Ce choix est incompréhensible, l&#8217;apport ergonomique de ces <i>favicon</i><sup class="spip_note"><a href='afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#nb1' class='spip_note' rel='footnote' title='Leur nom technique, le fichier s’appelant par défaut' id='nh1'>1</a></sup> étant considérable pour identifier visuellement rapidement un favori.</p>
 <p><span class='spip_document_463 spip_documents spip_documents_center'>
 <img src='../IMG/png/7/0/3/firefox-favicon-barre-personnelle.png' width="303" height="151" alt="Des favicon dans la barre personnelle de Firefox, m&#234;me sous Mac" title="Des favicon dans la barre personnelle de Firefox, m&#234;me sous Mac" /></span></p>
@@ -135,10 +138,10 @@
 <p>Voici donc le bout de code à ajouter à votre feuille de style personnalisée <code class='spip_code' dir='ltr'>userChrome.css</code><sup class="spip_note"><a href='afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#nb2' class='spip_note' rel='footnote' title='A créer s’il n’existe pas déjà' id='nh2'>2</a></sup> qui se trouve dans <code class='spip_code' dir='ltr'>~/Library/Application Support/Firefox/Profiles/xxxxxxxx.default/chrome/</code>&nbsp;:</p>
 <div class="coloration_code code"><div class="spip_css code"><pre class="css"><ol><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #6666ff;">.bookmark-item</span> <span style="color: #00AA00;">&gt;</span> <span style="color: #6666ff;">.toolbarbutton-icon</span> <span style="color: #00AA00;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">0px</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">padding</span> <span style="color: #00AA00;">:</span> <span style="color: #933;">0px</span> <span style="color: #933;">2px</span> <span style="color: #933;">0px</span> <span style="color: #933;">0px</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">18px</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">16px</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">inline</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #00AA00;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #6666ff;">.bookmark-item</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span> <span style="color: #00AA00;">&gt;</span> <span style="color: #6666ff;">.toolbarbutton-icon</span> <span style="color: #00AA00;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #9932cc;">url</span><span style="color: #00AA00;">&#40;</span><span style="color: #ff0000;">&quot;chrome://browser/skin/bookmark-hover-mid.png&quot;</span><span style="color: #00AA00;">&#41;</span> <span style="color: #993333;">repeat-x</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #00AA00;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #6666ff;">.bookmark-item</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">hover</span><span style="color: #00AA00;">:</span><span style="color: #F5758F;">active</span> <span style="color: #00AA00;">&gt;</span> <span style="color: #6666ff;">.toolbarbutton-icon</span> <span style="color: #00AA00;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #9932cc;">url</span><span style="color: #00AA00;">&#40;</span><span style="color: #ff0000;">&quot;chrome://browser/skin/bookmark-open-mid.png&quot;</span><span style="color: #00AA00;">&#41;</span> <span style="color: #993333;">repeat-x</span> !important<span style="color: #00AA00;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #00AA00;">&#125;</span> </div></li></ol></pre></div><p class='download code_download'><a href='../local/cache-code/b21cf7b81f8e7467a52d1536575fc138.txt'>Télécharger</a></p></div>
 <p>J&#8217;ai testé avec succès cette technique tant sur <a href="http://www.mozilla.com/en-US/firefox/all.html" class='spip_out' rel='external'>Firefox 2</a> que sur la toute dernière <a href="http://www.mozilla.com/en-US/firefox/all-beta.html" class='spip_out' rel='external'>Firefox 3 beta 2</a>.</p></div>
-      
 
-      
-      
+
+
+
       <div class="notes"><h2>Notes</h2><div id='nb1'>
 <p><span class="spip_note_ref"><a href='afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#nh1' class='spip_note' title='Notes 1' rev='footnote'>1</a></span>Leur nom technique, le fichier s&#8217;appelant par défaut <code class='spip_code' dir='ltr'>favicon.ico</code></p>
 </div><div id='nb2'>
@@ -147,27 +150,27 @@
     </div>
   </article>
 
-  
+
   <div class="comments">
-	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comments" name="comments" id="comments"></a> 
-	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum" name="forum" id="forum"></a> 
+	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comments" name="comments" id="comments"></a>
+	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum" name="forum" id="forum"></a>
 	<div class='ajaxbloc' data-ajax-env='wdstSglGLbBLc8ly8ICymVPQ8j6IE1/l6k14Y7K0CqyuAyMOt6wToyrxc/8xgkV5DJxfBrLsRi/xJ2lV0KdZKSTbKbTeHG/jGGD8N0t3IomdxvTSptVa9mIMT5BtH+DPJ4Olle8AHpxvzo6XM1nj56QDv3QfJSUls0hXrxWwx+l4uzZZ8RlH4Sf3RPcV5VF8Wn8zjwG7+OuZZ6loAYgzgHJxf8jcRSYTYPDlGuEWZSfqQvwXu+ZKY4hvY/CWEgYYjlsNZhiUTKfbbA==' data-origin="/divers/afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os">
 
 
 <div class="comments-list comments-posts">
 	<h2 class="h2">Vos commentaires</h2>
 	<ul class="comments-ul comments-items">
-		
+
 		<li class="comment-li comment-item odd  first">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1419" name="comment1419" id="comment1419"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1419" name="forum1419" id="forum1419"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1419" title="Lien permanent vers le commentaire 1419" class="permalink compteur">1<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-01-30T21:56:15Z">Le 30 janvier 2008 à&nbsp;21:56</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Ju</strong>  <img src='../local/cache-gd2/22/172829d3c275e71ef2a48f39a8ca24.jpg%3F1497366557' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
@@ -177,21 +180,21 @@ En résumé, je crée le fichier userContent.css mais je ne sais pas où le plac
 Merci de votre aide.<br class="autobr" />
 Bien cordialement,<br class="autobr" />
 julien</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1420" name="comment1420" id="comment1420"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1420" name="forum1420" id="forum1420"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1420" title="Lien permanent vers le commentaire 1420" class="permalink compteur">2<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-01-30T22:40:18Z">Le 30 janvier 2008 à&nbsp;22:40</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">http://julienfortin.fr</strong>  <img src='../local/cache-gd2/22/172829d3c275e71ef2a48f39a8ca24.jpg%3F1497366557' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
@@ -200,7 +203,7 @@ Il faut aller dans</p>
 <blockquote class="spip">
 <p>user > bibliothèque >application support > firefox > profiles > xxx.default > chrome</p>
 </blockquote>
- 
+
 <p>et j&#8217;ajoute juste une petite ligne au code pour décoller l&#8217;icône du texte</p>
 <p>.bookmark-item > .toolbarbutton-icon <i>&lt; br /><br class="autobr" />
   margin&nbsp;: 0px&nbsp;!important&nbsp;;<br class="autobr" />
@@ -208,21 +211,21 @@ Il faut aller dans</p>
   height&nbsp;: 16px&nbsp;!important&nbsp;;<br class="autobr" />
   display&nbsp;: inline&nbsp;!important&nbsp;;<br class="autobr" />
 </i></p></div></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1421" name="comment1421" id="comment1421"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1421" name="forum1421" id="forum1421"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1421" title="Lien permanent vers le commentaire 1421" class="permalink compteur">3<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-01-30T22:41:24Z">Le 30 janvier 2008 à&nbsp;22:41</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">http://julienfortin.fr</strong>  <img src='../local/cache-gd2/22/172829d3c275e71ef2a48f39a8ca24.jpg%3F1497366557' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
@@ -231,40 +234,40 @@ il faut insérer un</p>
 <blockquote class="spip">
 <p> padding&nbsp;: 0px 2px 0px 0px&nbsp;;</p>
 </blockquote></div></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1422" name="comment1422" id="comment1422"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1422" name="forum1422" id="forum1422"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1422" title="Lien permanent vers le commentaire 1422" class="permalink compteur">4<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-01-31T14:32:52Z">Le 31 janvier 2008 à&nbsp;14:32</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Effectivement, sauf qu&#8217;il faut alors passer la largeur à 18px pour garder les proportions... je corrige&nbsp;!</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1699" name="comment1699" id="comment1699"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1699" name="forum1699" id="forum1699"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1699" title="Lien permanent vers le commentaire 1699" class="permalink compteur">5<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2009-01-25T14:14:31Z">Le 25 janvier 2009 à&nbsp;14:14</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Jeg</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
@@ -272,229 +275,229 @@ il faut insérer un</p>
 Ayant installé Firefox 3 pour Mac, j&#8217;avais perdu toutes mes favicons de la barre personnelle, ce qui est très pénible. En effet, une des fonctions très pratique de Firefox était justement de pouvoir n&#8217;afficher _que_ les favicons si on le souhaite dans cette barre personnelle. On fait cela très facilement en glissant le lien vers la barre personnelle, puis en faisant clic droit propriétés et en effaçant le nom. On peut en voir un exemple d&#8217;application ici&nbsp;: <br class="autobr" />
 <a href="http://www.geckozone.org/forum/viewtopic.php?t=65834&amp;sid=6e8eaca5c90206522e3f24f0b4bbf350" class="spip_url spip_out auto" rel="nofollow external">http://www.geckozone.org/forum/viewtopic.php?t=65834&sid=6e8eaca5c90206522e3f24f0b4bbf350</a></p>
 <p>Question&nbsp;: pourriez-vous nous remettre dans un nouveau message le contenu exact et complet du fichier userChrome.css tel qu&#8217;il faut l&#8217;insérer (en incluant les dernières modifications&nbsp;? Merci par avance)</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1701" name="comment1701" id="comment1701"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1701" name="forum1701" id="forum1701"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1701" title="Lien permanent vers le commentaire 1701" class="permalink compteur">6<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2009-01-28T12:10:47Z">Le 28 janvier 2009 à&nbsp;12:10</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>J&#8217;ai beaucoup de favoris avec uniquement la favicon, effectivement.</p>
 <p>Par contre, je ne comprends pas la question finale, le code présent dans cet article a déjà été corrigé selon les commentaires, il n&#8217;y a rien à ajouter.</p>
 <p>Mais vous pouvez avoir d&#8217;autres règles pour d&#8217;autres usages dans votre <code class="spip_code" dir="ltr">userChrome.css</code>...</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1716" name="comment1716" id="comment1716"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1716" name="forum1716" id="forum1716"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1716" title="Lien permanent vers le commentaire 1716" class="permalink compteur">7<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2009-05-27T19:36:56Z">Le 27 mai 2009 à&nbsp;19:36</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n"> ?</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>super&nbsp;! c&#8217;est juste  ce que je cherchais depuis que j&#8217;utilise Firefox sur un Mac, merci pour le code.</p>
 <p>juste un petit défaut&nbsp;: ça prend plus de place que sur mon Firefox XP, ça déborde&nbsp;!<br class="autobr" />
 y&#8217;aurait pas moyen de corriger ça, ou ça tient à cette version Mac&nbsp;?</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1745" name="comment1745" id="comment1745"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1745" name="forum1745" id="forum1745"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1745" title="Lien permanent vers le commentaire 1745" class="permalink compteur">8<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2009-10-14T22:13:32Z">Le 14 octobre 2009 à&nbsp;22:13</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n"> ?</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>ENORME&nbsp;!</p>
 <p>Merci pour le tuyau, ça me désespérait cette barre personnelle toute grise&nbsp;!</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1774" name="comment1774" id="comment1774"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1774" name="forum1774" id="forum1774"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1774" title="Lien permanent vers le commentaire 1774" class="permalink compteur">9<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2010-01-02T23:28:38Z">Le 2 janvier 2010 à&nbsp;23:28</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n"> ?</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>+ 1 à ta solution merci beaucoup.<br class="autobr" />
 Elle fonctionne toujours avec Firefox 3.5</p>
 <p>@++</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1891" name="comment1891" id="comment1891"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1891" name="forum1891" id="forum1891"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1891" title="Lien permanent vers le commentaire 1891" class="permalink compteur">10<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2010-07-29T12:34:56Z">Le 29 juillet 2010 à&nbsp;12:34</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Scandale</strong>  <img src='../local/cache-gd2/25/31114b6c6d1051fef5f6c2280a7b43.jpg%3F1497366558' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>merci pour le tuyau, ça marche. manque juste dans le tutoriel le chemin ou mettre le fichier, mais il est noté dans les commentaires. je pense que c&#8217;est comme ça car c&#8217;est une habitude d&#8217;épurer au maximum sur mac.</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1892" name="comment1892" id="comment1892"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1892" name="forum1892" id="forum1892"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1892" title="Lien permanent vers le commentaire 1892" class="permalink compteur">11<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2010-07-29T12:41:20Z">Le 29 juillet 2010 à&nbsp;12:41</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Scandale</strong>  <img src='../local/cache-gd2/25/31114b6c6d1051fef5f6c2280a7b43.jpg%3F1497366558' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Pour ceux qui, comme moi, manquent de place dans leur barre personnelle, j&#8217;ai aussi ajouté le plugin MultirowBookmarksToolbar qui permet d&#8217;étendre la barre personnelle à plusieurs lignes.</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview reply">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment1893" name="comment1893" id="comment1893"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1893" name="forum1893" id="forum1893"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum1893" title="Lien permanent vers le commentaire 1893" class="permalink compteur">12<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2010-07-29T13:16:29Z">Le 29 juillet 2010 à&nbsp;13:16</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Effectivement, je viens d&#8217;ajouter le chemin, merci&nbsp;!</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment2975" name="comment2975" id="comment2975"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2975" name="forum2975" id="forum2975"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2975" title="Lien permanent vers le commentaire 2975" class="permalink compteur">13<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2014-04-16T02:53:56Z">Le 16 avril 2014 à&nbsp;02:53</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Jonathan</strong>  <img src='../local/cache-gd2/6b/524feed72f9b06fc209ec9071e82ef.jpg%3F1497366558' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Jonathan</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Quel billet passionnant. D&#8217;où vous viennent toutes ces informations&nbsp;? Je désespère si souvent de voir des actualités pertinentes sur un blog. Je serai ravie de vous joindre. Jonathan <a href="http://www.menuiseriearles.fr" class="spip_out" rel='nofollow external'>menuiserie arles</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment2991" name="comment2991" id="comment2991"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2991" name="forum2991" id="forum2991"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2991" title="Lien permanent vers le commentaire 2991" class="permalink compteur">14<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2014-05-01T05:14:48Z">Le 1er mai 2014 à&nbsp;05:14</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Bastien</strong>  <img src='../local/cache-gd2/15/fffdec9b60d4b7742db450c74969ac.jpg%3F1497366559' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Bastien</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Mon copain m&#8217;a donné envie de consulter votre site web et  je ne regrette pas. J&#8217;y découvre un grand nombre d&#8217;articles instructifs. A très bientôt.<br class="autobr" />
  Bastien <a href="http://www.01rachatdecredit.fr" class="spip_out" rel='nofollow external'>rachat de crédit http://www.01rachatdecredit.fr</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment2992" name="comment2992" id="comment2992"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2992" name="forum2992" id="forum2992"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2992" title="Lien permanent vers le commentaire 2992" class="permalink compteur">15<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2014-05-02T04:38:39Z">Le 2 mai 2014 à&nbsp;04:38</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Carl</strong>  <img src='../local/cache-gd2/df/e9f3fb31679ed5708c078c1fc75a3c.jpg%3F1497366559' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Carl</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Ma fille m&#8217;a dit de lire votre blog et  aucun regret. J&#8217;y déniche un grand nombre d&#8217;actus passionnantes. Chouette.<br class="autobr" />
  Carl <a href="http://www.eaa2010.org" class="spip_out" rel='nofollow external'>rachat de crédit conso http://www.eaa2010.org</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview">
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#comment2994" name="comment2994" id="comment2994"></a>
 	<a href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2994" name="forum2994" id="forum2994"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html#forum2994" title="Lien permanent vers le commentaire 2994" class="permalink compteur">16<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2014-05-03T21:02:40Z">Le 3 mai 2014 à&nbsp;21:02</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Lola13</strong>  <img src='../local/cache-gd2/bd/7cb4d96f924c9be1694cf450ebf5c3.jpg%3F1497366559' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="afficher-les-favicon-dans-la-barre-personnelle-de-firefox-sous-mac-os.html">Afficher les favicon dans la barre personnelle de Firefox sous Mac OS</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Grand merci de donner des textes de référence.  Lola, du blog commentgagnerargent.info  ,qui permet de <a href="http://www.commentgagnerargent.info" class="spip_out" rel='nofollow external'>gagner de l&#8217;argen</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 	</ul>
 </div>
 
@@ -579,7 +582,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 	Sauf mention contraire explicite, tous les contenus de ce site sont la propriété de Nicolas Hoizey et sont sous licence <a href="http://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0</a>.
 </p>    </footer>
   </div>
-  
+
 <!-- insert_head_css --><link rel='stylesheet' href='../local/cache-css/44d99dd2b32a5e4a12f57c13a85c5e5f.css%3F1497376017.css' type='text/css' /><script type='text/javascript' src='../local/cache-js/c2522b29caab081adb1f697205c9eb52.js%3F1497376017'></script>
 
 
@@ -594,7 +597,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 <!-- insert_head -->
 
 
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://gasteroprod.dev/plugins/perso/gasteroprod.com/js/vendors/analytics.js','ga'); ga('create', 'UA-1655999-1');
   ga('send', 'pageview');

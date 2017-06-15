@@ -9,7 +9,7 @@
 <title>La galerie SPIP, pour réutiliser facilement les images et documents - Gastero Prod.</title>
   <meta name="description" content="Une fonctionnalit&#233; int&#233;ressante de SPIP, si elle est bien exploit&#233;e, est de pouvoir utiliser tout document (ou image) attach&#233; &#224; un article ou une rubrique dans n&#039;importe quel autre &#233;l&#233;ment. Il est ainsi possible de gagner de l&#039;espace disque en &#233;vitant les doublons. Le probl&#232;me est qu&#039;il faut pour cela conna&#238;tre l&#039;identifiant du document en question, ce qui peut s&#039;av&#233;rer p&#233;nible quand on se souvient l&#039;avoir d&#233;j&#224; utilis&#233;, mais sans savoir o&#249;. Heureusement, voil&#224; une galerie qui va simplifier la proc&#233;dure !" />
   <link rel="canonical" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html" />
-  
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@nhoizey" />
   <meta property="og:type" content="article" />
@@ -17,17 +17,17 @@
   <meta property="og:url" content="http://gasteroprod.dev/divers/la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents" />
   <meta property="og:title" content="La galerie SPIP, pour réutiliser facilement les images et documents" />
   <meta property="og:description" content="Une fonctionnalit&#233; int&#233;ressante de SPIP, si elle est bien exploit&#233;e, est de pouvoir utiliser tout document (ou image) attach&#233; &#224; un article ou une rubrique dans n&#039;importe quel autre &#233;l&#233;ment. Il est ainsi possible de gagner de l&#039;espace disque en &#233;vitant les doublons. Le probl&#232;me est qu&#039;il faut pour cela conna&#238;tre l&#039;identifiant du document en question, ce qui peut s&#039;av&#233;rer p&#233;nible quand on se souvient l&#039;avoir d&#233;j&#224; utilis&#233;, mais sans savoir o&#249;. Heureusement, voil&#224; une galerie qui va simplifier la proc&#233;dure !" />
-  
-    
+
+
   <meta property="og:image" content="http://gasteroprod.dev/IMG/png/a/f/2/galerie_spip_1.png" />
   <meta property="og:locale" content="fr_FR" /><link rel="dns-prefetch" href="http://static.gasteroprod.com/" />
 
 <script type='text/javascript'>/*<![CDATA[*/
 	(function(R, H) {
-		
+
 		H.className = H.className.replace(/\bno-js\b/, 'js');
 
-		
+
 		R = R || 'landing';
 		if (!R.match(/^https?:\/\/(www\.)?gasteroprod\.(com|dev)\//)) {
 			H.className+=' landing';
@@ -40,6 +40,9 @@
 <link rel="icon" type="image/png" href="../plugins/perso/gasteroprod.com/img/gastero-prod-favicon.png" />
 <link rel="apple-touch-icon" href="../plugins/perso/gasteroprod.com/img/apple-touch-icon-144.png" /></head>
 <body>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
   <div id="page">
     <header id="header">
       <p id="logo" itemscope itemtype="http://schema.org/Organization">
@@ -118,7 +121,7 @@
       <article class="h-entry surlignable">
     <header>
       <h1 class="p-name">La galerie SPIP, pour réutiliser facilement les images et documents</h1>
-      
+
     </header>
     <div class="content e-content">
       <div class="infos">
@@ -129,7 +132,7 @@
   </div><div class="p-summary chapo"><p>Une fonctionnalité intéressante de SPIP, si elle est bien exploitée, est de pouvoir utiliser tout document (ou image) attaché à un article ou une rubrique dans n&#8217;importe quel autre élément. Il est ainsi possible de gagner de l&#8217;espace disque en évitant les doublons.</p>
 <p>Le problème est qu&#8217;il faut pour cela connaître l&#8217;identifiant du document en question, ce qui peut s&#8217;avérer pénible quand on se souvient l&#8217;avoir déjà utilisé, mais sans savoir où.</p>
 <p>Heureusement, voilà une galerie qui va simplifier la procédure&nbsp;!</p></div>
-      
+
       <div class="texte"><p>L&#8217;idée est tout simplement d&#8217;ajouter dans la barre d&#8217;aide à la saisie un bouton qui lance dans une autre fenêtre une galerie de tous les documents déjà présents dans SPIP.</p>
 <p>Depuis cette fenêtre, il est alors possible de se déplacer dans l&#8217;arborescence des rubriques et articles du site, et ainsi de visualiser tous les documents qui leurs sont attachés.</p>
 <p>Une fois le bon document retrouvé, des liens permettent d&#8217;ajouter simplement le bon raccourci typographique à la zone de saisie qui était active.</p>
@@ -165,33 +168,33 @@
 <div class="coloration_code code"><div class="spip_php code"><pre class="php"><ol><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #000000; font-weight: bold;">function</span> barre_galerie<span style="color: #009900;">&#40;</span>champ<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">    window<span style="color: #339933;">.</span>open<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'galerie.php3?field='</span> <span style="color: #339933;">+</span> champ<span style="color: #339933;">,</span> <span style="color: #0000ff;">'galerie'</span><span style="color: #339933;">,</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style=""><span style="color: #0000ff;">'width=550,height=400,menubar=no,scrollbars=yes'</span><span style="color: #009900;">&#41;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="">  <span style="color: #009900;">&#125;</span></div></li></ol></pre></div><p class='download code_download'><a href='../local/cache-code/5b2de0d1264139d06ecfcc86ba4c3b8d.txt'>Télécharger</a></p></div></li></ul></div>
       <div class="ps"><h2>P.-S.</h2><p>Cette galerie a également été testée avec succès avec la version 1.8 alpha 1 CVS du 7 juin 2004.</p></div>
 
-      
-      
-      
+
+
+
     </div>
   </article>
 
-  
+
   <div class="comments">
-	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comments" name="comments" id="comments"></a> 
-	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum" name="forum" id="forum"></a> 
+	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comments" name="comments" id="comments"></a>
+	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum" name="forum" id="forum"></a>
 	<div class='ajaxbloc' data-ajax-env='wdshTglWLXBLc8zyfOXQSmRKYDovRyNFQ04oE0+7CqyuAyMOp0G3XzGYfdw1jkf3odyM4bWRh+INZpqPl38bO1bAIUwK0n2Gge32tftvB5FhB/TrKGWWRKeStx0re6toX5trZgetibYZ6DRrT+8t0D0AEZ/eneyD+6mG0RcOE/iFS5cBc5+umlCbiT5u/mangAFNW19CduMJjzRAdcjQtQnKQ/2YJ9651K+JLgbdezT6owTa+xhCMo/Kv8fj7wf8aL5d/bj8KmQL' data-origin="/divers/la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents">
 
 
 <div class="comments-list comments-posts">
 	<h2 class="h2">Vos commentaires</h2>
 	<ul class="comments-ul comments-items">
-		
+
 		<li class="comment-li comment-item odd  first">
 			<div class="comment hreview">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment966" name="comment966" id="comment966"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum966" name="forum966" id="forum966"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum966" title="Lien permanent vers le commentaire 966" class="permalink compteur">1<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-01-30T18:14:37Z">Le 30 janvier 2005 à&nbsp;18:14</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">gerard</strong>  <img src='../local/cache-gd2/5b/42391f0135d15affc6ab6fecc263ec.jpg%3F1497383050' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -204,40 +207,40 @@ je trouve cette fonction tres intéressante effectivement. Bravo pour ce travail
 Peut être une aide&nbsp;!</p>
 <p>@+<br class="autobr" />
 <a href="mailto:gerard@xn--ptanque-breisach-bqb.de" class="spip_mail" rel='nofollow'>gerard</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment976" name="comment976" id="comment976"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum976" name="forum976" id="forum976"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum976" title="Lien permanent vers le commentaire 976" class="permalink compteur">2<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-02-25T22:35:46Z">Le 25 février 2005 à&nbsp;22:35</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>La fonction <code class="spip_code" dir="ltr">sous_arborescence()</code> est pourtant bien dans le script fourni, je ne vois vraiment pas ce qui peut causer cette erreur, désolé ...</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment996" name="comment996" id="comment996"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum996" name="forum996" id="forum996"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum996" title="Lien permanent vers le commentaire 996" class="permalink compteur">3<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-06-09T12:56:46Z">Le 9 juin 2005 à&nbsp;12:56</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Bou1024</strong>  <img src='../local/cache-gd2/40/8ae97e5065560ddc5e188fbe4e07cf.jpg%3F1497383051' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -246,21 +249,21 @@ Peut être une aide&nbsp;!</p>
 <p>Galerie de documents<br class="autobr" />
 &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showDocs()&nbsp;;  function hideAll() <i> hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideDocs()&nbsp;; </i> function showNice() <i> hideAll()&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showDocs()&nbsp;; </i> function showDocs() <i> showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; showOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; </i> function hideDocs() <i> hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; hideOne(&#8217; &#8217;, &#8217;&#8217;)&nbsp;; </i> &mdash;></p>
 <p>Puis il affiche la liste des rubriques. Et quand je clique sur droite, centré ou gauche rien ne se passe....</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment998" name="comment998" id="comment998"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum998" name="forum998" id="forum998"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum998" title="Lien permanent vers le commentaire 998" class="permalink compteur">4<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-06-15T15:53:17Z">Le 15 juin 2005 à&nbsp;15:53</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">defro</strong>  <img src='../local/cache-gd2/67/b2001aa5c82ee765d8ff39029b3a12.jpg%3F1497368343' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -269,81 +272,81 @@ Peut être une aide&nbsp;!</p>
 J&#8217;ai pu facilement identifier <i>l&#8217;erreur</i>&nbsp;! Tout fonctionne parfaitement sur un site SPIP (qui est en construction).<br class="autobr" />
 Pour obtenir ce <strong>fichier corrigé</strong> merci de m&#8217;ecrire un mail en citant&nbsp;: &#8220; fichier gallerie.php3 pour la Gallerie SPIP &#8221;.</p>
 <p>J&#8217;espere vous etre utile.&nbsp;:)</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1001" name="comment1001" id="comment1001"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1001" name="forum1001" id="forum1001"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1001" title="Lien permanent vers le commentaire 1001" class="permalink compteur">5<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-06-21T09:09:41Z">Le 21 juin 2005 à&nbsp;09:09</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">defro</strong>  <img src='../local/cache-gd2/67/b2001aa5c82ee765d8ff39029b3a12.jpg%3F1497368343' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Desole j&#8217;ai oublie de preciser mon adresse mail pour obtenir le fichier corrige&nbsp;: j.gaujard [at] laposte [dot] net</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1073" name="comment1073" id="comment1073"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1073" name="forum1073" id="forum1073"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1073" title="Lien permanent vers le commentaire 1073" class="permalink compteur">6<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-12-06T13:45:00Z">Le 6 décembre 2005 à&nbsp;13:45</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Jacques PYRAT</strong>  <img src='../local/cache-gd2/7b/a8bce59dce9979822fb2fd3236df6e.jpg%3F1497383052' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Est-ce que tu en a fait une version compatible SPIP 1.8.2e&nbsp;?</p>
 <p>Merci.</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd me">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1076" name="comment1076" id="comment1076"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1076" name="forum1076" id="forum1076"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1076" title="Lien permanent vers le commentaire 1076" class="permalink compteur">7<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-12-06T14:10:31Z">Le 6 décembre 2005 à&nbsp;14:10</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Salut Jacques,</p>
 <p>j&#8217;avoue ne pas avoir touché à ce code depuis sa publication ici, n&#8217;étant d&#8217;ailleurs finalement pas utilisateur moi-même...</p>
 <p>Fil avait trouvé l&#8217;idée intéressante, mais ça n&#8217;a une fois de plus rien donné, malheureusement.</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1087" name="comment1087" id="comment1087"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1087" name="forum1087" id="forum1087"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1087" title="Lien permanent vers le commentaire 1087" class="permalink compteur">8<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-12-09T13:38:01Z">Le 9 décembre 2005 à&nbsp;13:38</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Paul</strong>  <img src='../local/cache-gd2/52/9ab51e60c934b782c8fb3c46bbe94e.jpg%3F1497382830' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -351,82 +354,82 @@ Pour obtenir ce <strong>fichier corrigé</strong> merci de m&#8217;ecrire un mai
 <p>Plutôt que de donner ton mail, tu aurais pu donner un lien vers le fichier à télécharger, ou expliquer directement dans ce forum comment tu as corrigé.</p>
 <p>Je t&#8217;envoie un mail pour voir si tu réponds.</p>
 <p>Paul</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1089" name="comment1089" id="comment1089"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1089" name="forum1089" id="forum1089"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1089" title="Lien permanent vers le commentaire 1089" class="permalink compteur">9<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-12-18T17:17:28Z">Le 18 décembre 2005 à&nbsp;17:17</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="external nofollow" href="http://j.gaujard.free.fr/stuff/galerie.php3.zip" class="url spip_out"><strong class="fn n">defro</strong></a>   <img src='../local/cache-gd2/67/b2001aa5c82ee765d8ff39029b3a12.jpg%3F1497368343' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Comme l&#8217;a propose si malicieusement Paul voici le lien direct vers le fichier pour vous eviter une attente&nbsp;:<br class="autobr" />
 <a href="http://j.gaujard.free.fr/stuff/galerie.php3.zip" class="spip_url spip_out auto" rel="nofollow external">http://j.gaujard.free.fr/stuff/galerie.php3.zip</a></p>
 <p>Bon dev a tous&nbsp;;)</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1090" name="comment1090" id="comment1090"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1090" name="forum1090" id="forum1090"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1090" title="Lien permanent vers le commentaire 1090" class="permalink compteur">10<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-12-19T12:19:51Z">Le 19 décembre 2005 à&nbsp;12:19</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="external nofollow" href="http://j.gaujard.free.fr/stuff/galerie.zip" title="Le fichier zippe" class="url spip_out"><strong class="fn n">defro</strong></a>   <img src='../local/cache-gd2/67/b2001aa5c82ee765d8ff39029b3a12.jpg%3F1497368343' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Il y a un petit souci avec le compte Free avec le fichier zip. J&#8217;ai donc du changer le nom de l&#8217;archive.</p>
 <p>Voici le lien (definitif)&nbsp;:<br class="autobr" />
 <a href="http://j.gaujard.free.fr/stuff/galerie.zip" class="spip_url spip_out auto" rel="nofollow external">http://j.gaujard.free.fr/stuff/galerie.zip</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd me">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1091" name="comment1091" id="comment1091"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1091" name="forum1091" id="forum1091"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1091" title="Lien permanent vers le commentaire 1091" class="permalink compteur">11<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2005-12-20T09:37:45Z">Le 20 décembre 2005 à&nbsp;09:37</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Mais quelle était cette erreur, justement&nbsp;???</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1130" name="comment1130" id="comment1130"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1130" name="forum1130" id="forum1130"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1130" title="Lien permanent vers le commentaire 1130" class="permalink compteur">12<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2006-02-06T20:26:47Z">Le 6 février 2006 à&nbsp;20:26</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">ju</strong>  <img src='../local/cache-gd2/c9/398fd1593823184ba1edd17f2eead7.jpg%3F1497383053' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -435,21 +438,21 @@ Sinon, moi j&#8217;en ai eu une autre (d&#8217;erreur) avec le source "corrigé"
 <code class="spip_code" dir="ltr">$v = str_replace('&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--', '', $v);</code><br class="autobr" />
 par <code class="spip_code" dir="ltr">$v = str_replace('&lt;script type=&quot;text/javascript&quot; &gt;&lt;!--', '', $v);</code><br class="autobr" />
 un simple espace m&#8217;a enlevé beaucoup de bruit....</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1279" name="comment1279" id="comment1279"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1279" name="forum1279" id="forum1279"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1279" title="Lien permanent vers le commentaire 1279" class="permalink compteur">13<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2006-10-18T19:18:13Z">Le 18 octobre 2006 à&nbsp;19:18</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">gg33bdx</strong>  <img src='../local/cache-gd2/f3/f998468f4ebc0a0ad65d8fc22b3499.jpg%3F1497383054' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">> La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -459,21 +462,21 @@ avec sarka spip</p>
 <p>Galerie de documents</p>
 <p>Fatal error&nbsp;: Call to undefined function&nbsp;: texte_vignette_document() in /home.1/g/i/r/girondin/www/ecrire/galerie.php3 on line 179</p>
 <p>Merci pour votre aide</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1321" name="comment1321" id="comment1321"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1321" name="forum1321" id="forum1321"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1321" title="Lien permanent vers le commentaire 1321" class="permalink compteur">14<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2007-03-28T16:16:11Z">Le 28 mars 2007 à&nbsp;16:16</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n"> ?</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -483,62 +486,62 @@ ligne 270</p>
 <p>while (list(, $article) = each($listeArticles)) <i></i></p>
 </blockquote>
 <p>que devrait-il y avoir avant la virgule de "list(, "&nbsp;?</p></div></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1322" name="comment1322" id="comment1322"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1322" name="forum1322" id="forum1322"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1322" title="Lien permanent vers le commentaire 1322" class="permalink compteur">15<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2007-03-28T17:43:04Z">Le 28 mars 2007 à&nbsp;17:43</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Nicolas Hoizey</strong>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Pourquoi manquerait-il quelque chose&nbsp;?</p>
 <p>Y a-t-il un plantage quelconque&nbsp;?</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview reply">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1323" name="comment1323" id="comment1323"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1323" name="forum1323" id="forum1323"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1323" title="Lien permanent vers le commentaire 1323" class="permalink compteur">16<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2007-03-28T20:09:59Z">Le 28 mars 2007 à&nbsp;20:09</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Coyote</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>oui, j&#8217;ai un plantage en essayant d&#8217;adapter cette contrib à spip192.<br class="autobr" />
 le programme stop à la fonction "list"<br class="autobr" />
 pb transmis par email...</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd">
 			<div class="comment hreview">
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#comment1444" name="comment1444" id="comment1444"></a>
 	<a href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1444" name="forum1444" id="forum1444"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html#forum1444" title="Lien permanent vers le commentaire 1444" class="permalink compteur">17<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2008-03-29T20:45:41Z">Le 29 mars 2008 à&nbsp;20:45</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">se7en</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-galerie-spip-pour-reutiliser-facilement-les-images-et-documents.html">La galerie SPIP, pour réutiliser facilement les images et documents</a></span>
 </p>
 	<div class="comment-content description">
@@ -548,11 +551,11 @@ Nous l&#8217;avons fait tourner correctement sur la 1.9.2, mais intégré au plu
 Une piste d&#8217;amélioration&nbsp;:<br class="autobr" />
 Il faudrait afficher le numéro identifiant de l&#8217;article quelque-part en regard de chaque image ou document disponible dans le repository. <br class="autobr" />
 Ainsi on aurait pas forcément à cliquer sur le lien pour exploiter le fichier (à la mano via un raccourci customisé par ex).</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 	</ul>
 </div>
 
@@ -637,7 +640,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 	Sauf mention contraire explicite, tous les contenus de ce site sont la propriété de Nicolas Hoizey et sont sous licence <a href="http://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0</a>.
 </p>    </footer>
   </div>
-  
+
 <!-- insert_head_css --><link rel='stylesheet' href='../local/cache-css/44d99dd2b32a5e4a12f57c13a85c5e5f.css%3F1497376017.css' type='text/css' /><script type='text/javascript' src='../local/cache-js/c2522b29caab081adb1f697205c9eb52.js%3F1497376017'></script>
 
 
@@ -652,7 +655,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 <!-- insert_head -->
 
 
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://gasteroprod.dev/plugins/perso/gasteroprod.com/js/vendors/analytics.js','ga'); ga('create', 'UA-1655999-1');
   ga('send', 'pageview');

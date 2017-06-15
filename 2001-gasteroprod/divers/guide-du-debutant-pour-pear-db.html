@@ -9,7 +9,7 @@
 <title>Guide du débutant pour PEAR DB - Gastero Prod.</title>
   <meta name="description" content="Traduction d&#039;un tutoriel sur l&#039;utilisation de l&#039;extension d&#039;abstraction de bases de donn&#233;es PEAR::DB." />
   <link rel="canonical" href="guide-du-debutant-pour-pear-db.html" />
-  
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@nhoizey" />
   <meta property="og:type" content="article" />
@@ -17,16 +17,16 @@
   <meta property="og:url" content="http://gasteroprod.dev/divers/guide-du-debutant-pour-pear-db" />
   <meta property="og:title" content="Guide du débutant pour PEAR DB" />
   <meta property="og:description" content="Traduction d&#039;un tutoriel sur l&#039;utilisation de l&#039;extension d&#039;abstraction de bases de donn&#233;es PEAR::DB." />
-  
+
   <meta property="og:image" content="http://gasteroprod.dev/IMG/siteon0.png?1497358745" />
   <meta property="og:locale" content="fr_FR" /><link rel="dns-prefetch" href="http://static.gasteroprod.com/" />
 
 <script type='text/javascript'>/*<![CDATA[*/
 	(function(R, H) {
-		
+
 		H.className = H.className.replace(/\bno-js\b/, 'js');
 
-		
+
 		R = R || 'landing';
 		if (!R.match(/^https?:\/\/(www\.)?gasteroprod\.(com|dev)\//)) {
 			H.className+=' landing';
@@ -39,6 +39,9 @@
 <link rel="icon" type="image/png" href="../plugins/perso/gasteroprod.com/img/gastero-prod-favicon.png" />
 <link rel="apple-touch-icon" href="../plugins/perso/gasteroprod.com/img/apple-touch-icon-144.png" /></head>
 <body>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
   <div id="page">
     <header id="header">
       <p id="logo" itemscope itemtype="http://schema.org/Organization">
@@ -126,7 +129,7 @@
     <p><span class="label">tagué </span><span class="tags p-category"><a href="../tags/developpement.html" rel="tag p-category">développement</a>, <a href="../tags/pear.html" rel="tag p-category">PEAR</a> et <a href="../tags/php.html" rel="tag p-category">PHP</a></span></p>
     <p><span class="label"> et </span><span class="commentaires">    <a href="guide-du-debutant-pour-pear-db.html#comments">commenté 3 fois</a></span></p></span>
   </div><div class="p-summary chapo"><p>Traduction du tutoriel de <a href="mailto:cox@idecnet.com" class='spip_mail'>Tomas V. V. Cox</a> publié en anglais à l&#8217;adresse suivante&nbsp;: <a href="http://vulcanonet.com/soft/?pack=pear_tut" class='spip_url spip_out' rel='external'>http://vulcanonet.com/soft/?pack=pe...</a></p></div>
-      
+
       <div class="texte"><h2 class='h3 spip'>Introduction (à écrire&nbsp;!)</h2>
 <p>Ceci est un tutoriel sur l&#8217;utilisation de l&#8217;extension PEAR DB.</p>
 <p>PEAR DB est un ensemble de classe proposant&nbsp;:</p>
@@ -599,83 +602,83 @@ $db = DB::connect('pgsql://postgres@localhost/no_db');<br />
 ...<br />
 ?&gt;</code></div><h2 class='h3 spip'>Remerciements</h2>
 <p>Remerciements particuliers à Stig pour avoir créé le merveilleux monde de PEAR, aux personnes qui m&#8217;aident à maintenir ce document et bien sûr aussi à l&#8217;ensemble de l&#8217;équipe PEAR pour son travail permanent dessus.</p></div>
-      
 
-      
-      
-      
+
+
+
+
     </div>
   </article>
 
-  
+
   <div class="comments">
-	<a href="guide-du-debutant-pour-pear-db.html#comments" name="comments" id="comments"></a> 
-	<a href="guide-du-debutant-pour-pear-db.html#forum" name="forum" id="forum"></a> 
+	<a href="guide-du-debutant-pour-pear-db.html#comments" name="comments" id="comments"></a>
+	<a href="guide-du-debutant-pour-pear-db.html#forum" name="forum" id="forum"></a>
 	<div class='ajaxbloc' data-ajax-env='wdshrk5WLXBLc6XewETJLridGD1t1/iAhGZqqF3aEb6EmVrlfP7e9yI9kN4pkToIUlX3H7WJTIKPUIiVX0Z9YwzDJDRoxVAfrJw02r9zKTZy7bkl5YwgIG5X1Lac9q4/CrxQ6ksMbAepS3rAwVsOz2FNj7HuWcSDPDV37m2Ub/iVoZYCzrWnOhL2VwJCyCJ2ar2XGKUEAaCdNBeFrNKbxyDE8GT1VMnaHYg6Ck4ZvBnIgqVueC+CwZOSAkU/o4VwdYFzvOPZRA==' data-origin="/divers/guide-du-debutant-pour-pear-db">
 
 
 <div class="comments-list comments-posts">
 	<h2 class="h2">Vos commentaires</h2>
 	<ul class="comments-ul comments-items">
-		
+
 		<li class="comment-li comment-item odd  first">
 			<div class="comment hreview">
 	<a href="guide-du-debutant-pour-pear-db.html#comment1315" name="comment1315" id="comment1315"></a>
 	<a href="guide-du-debutant-pour-pear-db.html#forum1315" name="forum1315" id="forum1315"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="guide-du-debutant-pour-pear-db.html#forum1315" title="Lien permanent vers le commentaire 1315" class="permalink compteur">1<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2007-02-01T09:56:18Z">Le 1er février 2007 à&nbsp;09:56</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n"> ?</strong>  <img src='../local/cache-gd2/1c/bd5aa73e8a9a3550d628d5e5c365f1.png%3F1497357995' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="guide-du-debutant-pour-pear-db.html">Guide du débutant pour PEAR DB</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Très bon document.<br class="autobr" />
 Merci</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even">
 			<div class="comment hreview">
 	<a href="guide-du-debutant-pour-pear-db.html#comment1697" name="comment1697" id="comment1697"></a>
 	<a href="guide-du-debutant-pour-pear-db.html#forum1697" name="forum1697" id="forum1697"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="guide-du-debutant-pour-pear-db.html#forum1697" title="Lien permanent vers le commentaire 1697" class="permalink compteur">2<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2009-01-23T11:58:45Z">Le 23 janvier 2009 à&nbsp;11:58</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n"> ?</strong>  <img src='../local/cache-gd2/ee/c2098b7600c6563a2aa8cd2077da33.jpg%3F1497381136' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="guide-du-debutant-pour-pear-db.html">Guide du débutant pour PEAR DB</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>bonjour, aurait tu une idée pour recupere 1type booleen dans la base de donnée (jutilise pear / quickform/db) merci davance</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd me">
 			<div class="comment hreview reply">
 	<a href="guide-du-debutant-pour-pear-db.html#comment1700" name="comment1700" id="comment1700"></a>
 	<a href="guide-du-debutant-pour-pear-db.html#forum1700" name="forum1700" id="forum1700"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="guide-du-debutant-pour-pear-db.html#forum1700" title="Lien permanent vers le commentaire 1700" class="permalink compteur">3<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2009-01-26T12:40:20Z">Le 26 janvier 2009 à&nbsp;12:40</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="guide-du-debutant-pour-pear-db.html">Guide du débutant pour PEAR DB</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Je suppose que cela dépend un peu de la base de données utilisée, mais où est le problème&nbsp;?</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 	</ul>
 </div>
 
@@ -760,7 +763,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 	Sauf mention contraire explicite, tous les contenus de ce site sont la propriété de Nicolas Hoizey et sont sous licence <a href="http://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0</a>.
 </p>    </footer>
   </div>
-  
+
 <!-- insert_head_css --><link rel='stylesheet' href='../local/cache-css/44d99dd2b32a5e4a12f57c13a85c5e5f.css%3F1497376017.css' type='text/css' /><script type='text/javascript' src='../local/cache-js/c2522b29caab081adb1f697205c9eb52.js%3F1497376017'></script>
 
 
@@ -775,7 +778,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 <!-- insert_head -->
 
 
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://gasteroprod.dev/plugins/perso/gasteroprod.com/js/vendors/analytics.js','ga'); ga('create', 'UA-1655999-1');
   ga('send', 'pageview');

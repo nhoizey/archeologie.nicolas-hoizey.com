@@ -9,7 +9,7 @@
 <title>La navigation ne se fige plus en haut de l'écran lors du scroll - Gastero Prod.</title>
   <meta name="description" content=" Vous l&#039;avez peut-&#234;tre constat&#233; par vous-m&#234;me, le menu de navigation de ce site ne se fige plus en haut de l&#039;&#233;cran quand vous descendez dans la page. Ce (...) " />
   <link rel="canonical" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html" />
-  
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@nhoizey" />
   <meta property="og:type" content="article" />
@@ -17,16 +17,16 @@
   <meta property="og:url" content="http://gasteroprod.dev/web/la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll" />
   <meta property="og:title" content="La navigation ne se fige plus en haut de l'écran lors du scroll" />
   <meta property="og:description" content=" Vous l&#039;avez peut-&#234;tre constat&#233; par vous-m&#234;me, le menu de navigation de ce site ne se fige plus en haut de l&#039;&#233;cran quand vous descendez dans la page. Ce fonctionnement que j&#039;avais trouv&#233; tr&#232;s sexy (...) " />
-  
+
   <meta property="og:image" content="http://gasteroprod.dev/IMG/siteon0.png?1497358745" />
   <meta property="og:locale" content="fr_FR" /><link rel="dns-prefetch" href="http://static.gasteroprod.com/" />
 
 <script type='text/javascript'>/*<![CDATA[*/
 	(function(R, H) {
-		
+
 		H.className = H.className.replace(/\bno-js\b/, 'js');
 
-		
+
 		R = R || 'landing';
 		if (!R.match(/^https?:\/\/(www\.)?gasteroprod\.(com|dev)\//)) {
 			H.className+=' landing';
@@ -39,6 +39,9 @@
 <link rel="icon" type="image/png" href="../plugins/perso/gasteroprod.com/img/gastero-prod-favicon.png" />
 <link rel="apple-touch-icon" href="../plugins/perso/gasteroprod.com/img/apple-touch-icon-144.png" /></head>
 <body>
+  <div style="margin: 0; padding: 0; background-color: #f57155; color: #fff; text-align: center; border-bottom: 1px solid #f0350e;">
+    <p style="margin: 0; padding: .5em 1em">Attention, ceci est l'archivage statique d'un ancien site qui a maintenant disparu. <a href="/" style="color: #fff;">En savoir plus</a>.</p>
+  </div>
   <div id="page">
     <header id="header">
       <p id="logo" itemscope itemtype="http://schema.org/Organization">
@@ -117,7 +120,7 @@
       <article class="h-entry surlignable">
     <header>
       <h1 class="p-name">La navigation ne se fige plus en haut de l&#8217;écran lors du scroll</h1>
-      
+
     </header>
     <div class="content e-content">
       <div class="infos">
@@ -126,7 +129,7 @@
     <p><span class="label">tagué </span><span class="tags p-category"><a href="../tags/ergonomie.html" rel="tag p-category">ergonomie</a>, <a href="../tags/gastero-prod.html" rel="tag p-category">Gastero Prod</a>, <a href="../tags/javascript.html" rel="tag p-category">JavaScript</a> et <a href="../tags/webperf.html" rel="tag p-category">webperf</a></span></p>
     <p><span class="label"> et </span><span class="commentaires">     <a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comments">commenté 4 fois</a></span></p></span>
   </div><div class="p-summary chapo"><p>Vous l&#8217;avez peut-être constaté par vous-même, le menu de navigation de ce site ne se fige plus en haut de l&#8217;écran quand vous descendez dans la page. Ce fonctionnement que j&#8217;avais trouvé très <a href="un-menu-de-navigation-toujours-visible.html" class='spip_in'>sexy</a> s&#8217;avère poser plusieurs problèmes, donc j&#8217;ai préféré le supprimer.</p></div>
-      
+
       <div class="texte"><h2 class='h3 spip'>Un problème ergonomique</h2>
 <p>Le premier problème &mdash; le plus important &mdash; est ergonomique.</p>
 <p>Comme le met en évidence Stéphane dans son billet &#171;&nbsp;<a href="http://www.nota-bene.org/Le-probleme-de-position-fixed" class='spip_out' rel='external'>Le problème de position:fixed</a>&nbsp;&#187; illustré par le cas concret du <a href="http://jeremie.patonnier.net/" class='spip_out' rel='external'>site de Jérémie</a>, fixer des éléments en haut ou bas de page conduit à masquer une partie du contenu lorsque l&#8217;on scroll par à coups, avec les touches <kbd>page suivante</kbd> / <kbd>page précédente</kbd> du clavier.</p>
@@ -138,37 +141,37 @@
 <h2 class='h3 spip'>Un problème d&#8217;eXpérience Utilisateur</h2>
 <p>Malheureusement, cette nouvelle version du code, si elle était bien plus performante et impactait beaucoup moins les navigateurs obsolètes, faisait qu&#8217;il y avait un effet désagréable de saut du menu quand l&#8217;utilisateur descendait dans la page.</p>
 <p>Le passage au point névralgique devant faire passer en <code class='spip_code' dir='ltr'>position: fixed;</code> ne se faisait effectivement que rarement au moment précis d&#8217;une itération de contrôle, donc le menu commençait à disparaître en haut, avant de revenir soudainement en place, de manière que j&#8217;ai jugée trop désagréable à l’œil pour pouvoir la conserver.</p></div>
-      
 
-      
-      
+
+
+
       <div class="notes"><h2>Notes</h2><div id='nb1'>
 <p><span class="spip_note_ref"><a href='la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#nh1' class='spip_note' title='Notes 1' rev='footnote'>1</a></span>Je n&#8217;ai même pas osé essayer...</p>
 </div></div>
     </div>
   </article>
 
-  
+
   <div class="comments">
-	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comments" name="comments" id="comments"></a> 
-	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum" name="forum" id="forum"></a> 
+	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comments" name="comments" id="comments"></a>
+	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum" name="forum" id="forum"></a>
 	<div class='ajaxbloc' data-ajax-env='wduhTQlGMXCzIAly+C5B6UY8fjoHbcXiSpQph5Y7xw42fchAADFA+6zuV8I1sbJ61khbNemSLfrhd8LMcJAIjdeQin1+2RVF3mvotftvB5HBbP/riF+VRCcP6Kl294OfrBtGbIoq2sV+Hb9iLw3R9wy4vH49gP3YYXyvW4nXCbKMoO4aR89h4XN4l0btfWyIvnGag1c8iUigCKSjWQiPJt9zJF+BM7AGJunXGm3IbBnqRvQzu8byApv8amWaUaqOvUiOoEbVE8ixRg==' data-origin="/web/la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll">
 
 
 <div class="comments-list comments-posts">
 	<h2 class="h2">Vos commentaires</h2>
 	<ul class="comments-ul comments-items">
-		
+
 		<li class="comment-li comment-item odd  first">
 			<div class="comment hreview">
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comment1976" name="comment1976" id="comment1976"></a>
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum1976" name="forum1976" id="forum1976"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum1976" title="Lien permanent vers le commentaire 1976" class="permalink compteur">1<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2011-04-11T22:20:16Z">Le 11 avril 2011 à&nbsp;22:20</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <strong class="fn n">Monique</strong>  <img src='../local/cache-gd2/06/9d8ed24945592274322a0755ce4517.jpg%3F1497369308' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html">La navigation ne se vige plus en haut de l&#8217;écran lors du scroll</a></span>
 </p>
 	<div class="comment-content description">
@@ -178,68 +181,68 @@
 <p>PS&nbsp;: je ne connaissais pas le verbe viger&nbsp;;-)</p>
 <p>Amicalement,<br class="autobr" />
 Monique</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview reply">
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comment1977" name="comment1977" id="comment1977"></a>
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum1977" name="forum1977" id="forum1977"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum1977" title="Lien permanent vers le commentaire 1977" class="permalink compteur">2<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2011-04-11T22:49:08Z">Le 11 avril 2011 à&nbsp;22:49</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html">La navigation ne se vige plus en haut de l&#8217;écran lors du scroll</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Zut, tu as vu la coquille avant que j&#8217;ai eu le temps de la corriger...&nbsp;;-)</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item odd me">
 			<div class="comment hreview reply">
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comment1978" name="comment1978" id="comment1978"></a>
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum1978" name="forum1978" id="forum1978"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum1978" title="Lien permanent vers le commentaire 1978" class="permalink compteur">3<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2011-04-12T17:14:48Z">Le 12 avril 2011 à&nbsp;17:14</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html">La navigation ne se vige plus en haut de l&#8217;écran lors du scroll</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Désolé Monique, je n&#8217;avais pas répondu sur le fond. Ce qui te gêne avec ce positionnement fixe, c&#8217;est ce qu&#8217;évoque Stéphane dans son billet, ou c&#8217;est quelque chose d&#8217;autre en plus&nbsp;?</p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 		<li class="comment-li comment-item even me">
 			<div class="comment hreview">
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#comment3011" name="comment3011" id="comment3011"></a>
 	<a href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum3011" name="forum3011" id="forum3011"></a>
 	<p class="comment-meta">
 	 <a rel="self bookmark" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html#forum3011" title="Lien permanent vers le commentaire 3011" class="permalink compteur">4<span class="sep">.</span></a>
-	
-	
+
+
 	<abbr class="dtreviewed" title="2014-05-06T16:13:52Z">Le 6 mai 2014 à&nbsp;16:13</abbr><span class="reviewer vcard"><span class="sep">, </span>par  <a rel="nofollow" href="../auteur/nicolas-hoizey.html" class="url spip_in"><strong class="fn n">Nicolas Hoizey</strong></a>  <img src='../local/cache-gd2/0e/13ad9e3c39890509bf40caca53159b.jpg%3F1497357755' width='64' height='64' alt='' class='spip_logo spip_logos photo avatar' /></span>
-	
+
 	<span class="item">En réponse à : <a class="url fn" href="la-navigation-ne-se-fige-plus-en-haut-de-l-ecran-lors-du-scroll.html">La navigation ne se fige plus en haut de l&#8217;écran lors du scroll</a></span>
 </p>
 	<div class="comment-content description">
 		<div class="comment-texte "><span style='word-wrap:break-word;'><p>Si vous voulez tout de même avoir une navigation fixée, voici une piste pour régler le problème de défilement au clavier soulevé par Stéphane&nbsp;: <a href="http://murtaugh.github.io/sticky-pagination-fixer/" class="spip_url spip_out auto" rel="nofollow external">http://murtaugh.github.io/sticky-pagination-fixer/</a></p></span></div>
-		
-		
+
+
 	</div>
 	</div><!--.comment-->		</li>
-		
+
 	</ul>
 </div>
 
@@ -324,7 +327,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 	Sauf mention contraire explicite, tous les contenus de ce site sont la propriété de Nicolas Hoizey et sont sous licence <a href="http://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0</a>.
 </p>    </footer>
   </div>
-  
+
 <!-- insert_head_css --><link rel='stylesheet' href='../local/cache-css/44d99dd2b32a5e4a12f57c13a85c5e5f.css%3F1497376017.css' type='text/css' /><script type='text/javascript' src='../local/cache-js/c2522b29caab081adb1f697205c9eb52.js%3F1497376017'></script>
 
 
@@ -339,7 +342,7 @@ c-7.5,8.992-18.18,13.489-32.039,13.489C358.017,302.933,350.612,301.625,343.684,2
 <!-- insert_head -->
 
 
-  
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://gasteroprod.dev/plugins/perso/gasteroprod.com/js/vendors/analytics.js','ga'); ga('create', 'UA-1655999-1');
   ga('send', 'pageview');
