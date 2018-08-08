@@ -1,0 +1,24 @@
+<HTML>
+
+<HEAD>
+<script language="JavaScript">
+<!-- Debut du script -------------------
+function temps(sec)
+{
+	var msg="Vous avez passe " + sec + " secondes sur cette page ...";
+	sec++;
+	window.status=msg;
+	var cmd="temps(" + sec + ")";
+	var t=window.setTimeout(cmd,1000);
+}
+// -- Fin du script -------------- -->
+</script>
+<TITLE>Le menu</TITLE>
+</HEAD>
+
+<BODY BACKGROUND="../bckgnd.jpg" onLoad="t=window.setTimeout('temps(1)',1000);">
+<H1>
+Le temps pass&eacute; sur cette page est affich&eacute; dans la barre de statut ...
+</BODY>
+
+</HTML>

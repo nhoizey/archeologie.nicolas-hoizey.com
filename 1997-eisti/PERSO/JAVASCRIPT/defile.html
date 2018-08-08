@@ -1,0 +1,46 @@
+<HTML>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Debut du script -------------------
+function scroll(n)
+{
+	var msg="Ceci est un test de message qui defile ...";
+	var out=" ";
+	var time=100;
+
+	if( n < 0)
+	{
+		if(-n < msg.length)
+		{
+			out+=msg.substring(-n,msg.length);
+		}
+		else
+		{
+			n=100;
+		}
+	}
+	else
+	{
+		for (c=0 ; c < n ; c++)
+		{
+			out+=" ";
+		}
+		out+=msg;
+	}
+	window.status=out;
+	n--;
+	var cmd="scroll(" + n + ")";
+	timerTwo=window.setTimeout(cmd,time);
+}
+// -- Fin du script -------------- -->
+</SCRIPT>
+<title> Ceci est un test de message qui defile ... </title>
+</HEAD>
+
+<body background="../bckgnd.jpg" onLoad="window.setTimeout('scroll(1)',1000);">
+<H1>
+Un message d&eacute;file dans la barre de statut ...
+</BODY>
+
+</HTML>

@@ -1,0 +1,57 @@
+<HTML>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- D&eacute;but du script --
+var b=navigator.appName.substring(0,1)+parseInt(navigator.appVersion);
+
+function off()
+{
+  if(b=='N3') document.images[3].src="generique.gif";
+}
+
+function on(img)
+{
+  if(b=='N3') document.images[3].src=img;
+}
+// -- Fin du script -->
+</SCRIPT>
+<TITLE>Le cin&eacute;ma</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF">
+<CENTER>
+<IMG SRC="titre.gif">
+<P>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+  <TD COLSPAN=3><IMG SRC="haut.gif"></TD>
+<TR>
+  <TD><IMG SRC="gauche.gif"></TD>
+  <TD><IMG SRC="generique.gif"></TD>
+  <TD><IMG SRC="droite.gif"></TD>
+<TR>
+  <TD COLSPAN=3><IMG SRC="bas.gif"></TD>
+</TABLE>
+<P>
+<TABLE BORDER=1>
+<TR>
+  <TD><A HREF="JacquesAudiard/index.html" onMouseOver='on("audiard.gif")' onMouseOut='off()'>Jacques Audiard</A>
+  <TD><A HREF="LucBesson/index.html" onMouseOver='on("besson.gif")' onMouseOut='off()'>Luc Besson</A>
+  <TD><A HREF="NicolasBoukhrief/index.html" onMouseOver='on("boukhrief.gif")' onMouseOut='off()'>Nicolas Boukhrief</A>
+  <TD><A HREF="MarcCaro/index.html" onMouseOver='on("caro.gif")' onMouseOut='off()'>Marc Caro</A>
+  <TD><A HREF="AlbertDupontel/index.html" onMouseOver='on("dupontel.gif")' onMouseOut='off()'>Albert Dupontel</A>
+<TR>
+  <TD><A HREF="ChristopheGans/index.html" onMouseOver='on("gans.gif")' onMouseOut='off()'>Christophe Gans</A>
+  <TD><A HREF="JeanPierreJeunet/index.html" onMouseOver='on("jeunet.gif")' onMouseOut='off()'>Jean-Pierre Jeunet</A>
+  <TD><A HREF="MathieuKassovitz/index.html" onMouseOver='on("kassovitz.gif")' onMouseOut='off()'>Mathieu Kassovitz</A>
+  <TD><A HREF="JanKounen/index.html" onMouseOver='on("kounen.gif")' onMouseOut='off()'>Jan Kounen</A>
+  <TD><A HREF="DidierLePecheur/index.html" onMouseOver='on("lepecheur.gif")' onMouseOut='off()'>Didier Le P&ecirc;cheur</A>
+</TABLE>
+<P>
+Si vous voulez savoir quelles relations unissent ces dignes repr�sentants du cin�ma fran�ais, allez faire un tour
+dans<P>
+<A HREF="666degrees/index.html"><IMG SRC="666.gif" BORDER=0></A>
+</BODY>
+
+</HTML>

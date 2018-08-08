@@ -1,0 +1,86 @@
+<!--#include virtual="../cgi-bin/statistiques"-->
+
+<HTML>
+
+<HEAD>
+<title>C'est le Forum de Brush ...</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Debut du script --
+var doubledip0=true;
+var doubledip1=true;
+var doubledip2=true;
+
+function presents()
+{
+	var winlast0=window.open("/~hoizey/FORUM/presents.html","winlast0","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizeable=1,width=302,height=100");
+	if (doubledip0)
+	{
+		doubledip0=false;
+		presents();
+	}
+	doubledip0=true;
+}
+
+function message()
+{
+	var winlast1=window.open("/~hoizey/FORUM/last.html","winlast1","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizeable=1,width=302,height=93");
+	if (doubledip1)
+	{
+		doubledip1=false;
+		message();
+	}
+	doubledip1=true;
+}
+
+function smileys()
+{
+	var winlast2=window.open("/~hoizey/FORUM/SMILEYS/smileys.html","winlast2","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizeable=1,width=302,height=300");
+	if (doubledip2)
+	{
+		doubledip2=false;
+		smileys();
+	}
+	doubledip2=true;
+}
+// -- Fin du script -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="../bckgnd.jpg">
+<FONT COLOR="#FF0000"><BLINK>ATTENTION</BLINK></FONT> : Ce forum &eacute;tant encore en construction,
+des bugs y sont pr&eacute;sents. Notamment, la gestion des acc&egrave;s concurentiels
+n'est pas parfaite, et Internet Explorer ne semble pas &ecirc;tre ad&eacute;quat ...
+<P>
+Pour profiter pleinement des possiblilit&eacute;s de ce forum, vous devez autoriser le JavaScript.
+<P>
+Ce forum est libre d'acc&egrave;s et ne n&eacute;cessite aucun mot de passe.
+Cependant, je vous demande de respecter la Netiquette si vous prenez la peine d'y entrer ... Merci.
+<P>
+<UL>
+<LI>Pour avoir les fen&ecirc;tres suivantes, cliquez
+<FORM>
+<INPUT TYPE="button" VALUE="liste des smileys" onClick="smileys()">
+<INPUT TYPE="button" VALUE="liste des presents" onClick="presents()">
+<INPUT TYPE="button" VALUE="heure du dernier message" onClick="message()">
+</FORM>
+<LI>
+<FORM METHOD="post" ACTION="../cgi-bin/forum">
+  donnez votre pseudo : <INPUT NAME="pseudo" MAXLENGTH="15"><INPUT TYPE="hidden" NAME="message" VALUE="Me voila ..."><BR>
+  le nombre de messages que vous voulez &agrave; l'&eacute;cran : <INPUT NAME="nb" MAXLENGTH=3 SIZE=4 VALUE="10"><BR>
+  le temps entre chaque mise &agrave; jour automatique : <INPUT NAME="delai" MAXLENGTH=2 SIZE=3 VALUE="10"> secondes (-1 pour aucune mise &agrave; jour)<BR>
+  la couleur de vos messages :
+  <SELECT NAME="couleur">
+    <OPTION VALUE="#000000" SELECTED> noir
+    <OPTION VALUE="#FF0000"> rouge
+    <OPTION VALUE="#008800"> vert
+    <OPTION VALUE="#0000FF"> bleu
+  </SELECT><BR>
+  puis <INPUT TYPE="submit" VALUE="entrez dans le forum">
+</FORM>
+<LI><BLINK>Pour quitter le forum, tapez 'Au revoir ...'</BLINK>
+<P>
+<LI>Pour retourner chez Brush, cliquez <A HREF="/~hoizey/index.html">ici</A>
+</UL>
+</BODY>
+
+</HTML>

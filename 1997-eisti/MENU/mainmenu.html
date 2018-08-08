@@ -1,0 +1,33 @@
+<HTML>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Debut du script --
+function on(img)
+{
+  img.src=img.src.substring(0,img.src.length-4)+"_"+img.src.substring(img.src.length-4);
+}
+
+function off(img)
+{
+  img.src=img.src.substring(0,img.src.length-5)+img.src.substring(img.src.length-4);
+}
+//-- Fin du script -->
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#000000">
+<CENTER>
+<A HREF="../home.html" TARGET="champ" onMouseOver="on(maison)" onMouseOut="off(maison)"><IMG SRC="mmaison.gif" NAME="maison" BORDER=0></A>
+<A HREF="../CV/" TARGET="champ" onMouseOver="on(cv)" onMouseOut="off(cv)"><IMG SRC="mcv.gif" NAME="cv" BORDER=0></A>
+<A HREF="../CINEMA/cinema.html" TARGET="champ" onMouseOver="on(cinema)" onMouseOut="off(cinema)"><IMG SRC="mcinema.gif" NAME="cinema" BORDER=0></A>
+<A HREF="../LITTERATURE/" TARGET="champ" onMouseOver="on(livres)" onMouseOut="off(livres)"><IMG SRC="mlivres.gif" NAME="livres" BORDER=0></A>
+<A HREF="../HUMOUR/" TARGET="champ" onMouseOver="on(humour)" onMouseOut="off(humour)"><IMG SRC="mhumour.gif" NAME="humour" BORDER=0></A>
+<A HREF="../cgi-bin/forum" TARGET="champ" onMouseOver="on(forum)" onMouseOut="off(forum)"><IMG SRC="mforum.gif" NAME="forum" BORDER=0></A>
+<A HREF="../CHOC/" TARGET="champ" onMouseOver="on(choc)" onMouseOut="off(choc)"><IMG SRC="mchoc.gif" NAME="choc" BORDER=0></A>
+<A HREF="../PERSO/" TARGET="champ" onMouseOver="on(perso)" onMouseOut="off(perso)"><IMG SRC="mperso.gif" NAME="perso" BORDER=0></A>
+<A HREF="../LIENS/" TARGET="champ" onMouseOver="on(liens)" onMouseOut="off(liens)"><IMG SRC="mliens.gif" NAME="liens" BORDER=0></A>
+<A HREF="../RECHERCHE/" TARGET="champ" onMouseOver="on(rech)" onMouseOut="off(rech)"><IMG SRC="mrech.gif" NAME="rech" BORDER=0></A>>Recherche</A>
+</BODY>
+
+</HTML>

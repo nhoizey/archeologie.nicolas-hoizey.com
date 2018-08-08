@@ -1,0 +1,59 @@
+<HTML>
+
+<HEAD>
+<script language="JavaScript">
+<!-- Debut du script -------------------
+function makearray(n)
+{
+    this.length = n;
+    for(var i = 1; i <= n; i++)
+        this[i] = 0;
+    return this;
+}
+
+hexa = new makearray(16);
+for(var i = 0; i < 10; i++)
+{
+    hexa[i] = i;
+}
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+function hex(i)
+{
+    if (i < 0)
+        return "00";
+    else if (i > 255)
+        return "ff";
+    else
+        return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function color(r,g,b)
+{
+    var hr = hex(r);
+    var hg = hex(g);
+    var hb = hex(b);
+    document.bgColor = "#"+hr+hg+hb;
+}
+
+function couleurs(r,rv,g,gv,b,bv)
+{
+	color(r,g,b);
+	r+=rv;
+	g+=gv;
+	b+=bv;
+	if((r<0) || (r>255)) rv=-rv;
+	if((g<0) || (g>255)) gv=-gv;
+	if((b<0) || (b>255)) bv=-bv;
+	cmd="couleurs("+r+","+rv+","+g+","+gv+","+b+","+bv+")";
+	t=window.setTimeout(cmd,100);
+}
+// -- Fin du script -------------- -->
+</script>
+</HEAD>
+
+<BODY onLoad="t=window.setTimeout('couleurs(0,5,0,6,0,8)',100);">
+</BODY>
+
+</HTML>

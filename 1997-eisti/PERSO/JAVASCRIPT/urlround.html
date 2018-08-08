@@ -1,0 +1,22 @@
+<HTML>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Début du script ----------------------
+var i=0;
+
+function changeURL()
+{
+  i++;
+  document.links[0].href="page" + i + ".html";
+  setTimeout('changeURL()',1000);
+}
+// -- Fin du script -->
+</SCRIPT>
+</HEAD>
+                                
+<BODY onLoad="window.setTimeout('changeURL()',1000);">
+<A HREF="page.html">Lien</A> non valide ...
+</BODY>
+
+</HTML>

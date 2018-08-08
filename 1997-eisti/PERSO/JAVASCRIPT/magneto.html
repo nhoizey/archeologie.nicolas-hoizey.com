@@ -1,0 +1,53 @@
+<HTML>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Debut du script -------------------
+var msg="Ceci est un test de message qui defile ... ";
+var time=100;
+var n=0;
+var sens=1;
+
+function scroll()
+{
+  var out="";
+
+  out+=msg.substring(n,msg.length);
+  while(out.length < 50) out+=msg;
+  out=out.substring(0,49);
+  document.form.champ.value=out;
+  n=(msg.length+n+sens)%msg.length;
+  t=window.setTimeout('scroll()',time);
+}
+// -- Fin du script -------------- -->
+</SCRIPT>
+<title>Ceci est un magnetophone a message ...</title>
+</HEAD>
+
+<body background="../bckgnd.jpg">
+<H1>
+Ceci est un magn&eacute;tophone &agrave; message ...
+</H1>
+<FORM NAME="form">
+Pour mettre votre propre message,<BR>
+&eacute;crivez-le ici : <INPUT TYPE="text" NAME="mesg" SIZE=50><BR>
+puis cliquez sur
+<INPUT TYPE="button" VALUE="OK" onClick="msg=document.form.mesg.value">
+<P><CENTER>
+<INPUT TYPE="text" NAME="champ" SIZE=50>
+<P>
+<INPUT TYPE="button" VALUE="[<<<]" onClick="sens=1">
+<INPUT TYPE="button" VALUE="[   ]" onClick="sens=0">
+<INPUT TYPE="button" VALUE="[>>>]" onClick="sens=-1">
+<P>
+<INPUT TYPE="button" VALUE="[ - ]" onClick="time+=10">
+<INPUT TYPE="button" VALUE="[ + ]" onClick="if(time>10)time-=10">
+</FORM>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Debut du script --
+scroll();
+// -- Fin du script -->
+</SCRIPT>
+</BODY>
+
+</HTML>
